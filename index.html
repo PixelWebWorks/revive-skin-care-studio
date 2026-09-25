@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Revive Facial | Revive Skin Care Studio Stamford, CT</title>
+  <meta name="description" content="Experience Stamford's most comprehensive 90-minute medical-grade facial. Dermaplaning, O2toDerm Oxygen Dome, LED Light Therapy & Custom Peels. Book your glow today.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signature Revive Facial | Revive Skin Care Studio">
+  <meta property="og:description" content="Transform your skin in 90 minutes. Stamford's premier custom facial featuring O2toDerm Oxygen Therapy, Dermaplaning & LED Glow.">
+  <meta property="og:image" content="assets/hero-facial.jpeg">
+  <meta property="og:url" content="https://reviveskincarestudio.com">
+  <link rel="icon" href="assets/Logo-Revive-05.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Revive Studio Knowledge Base -->
+  <script src="knowledge.js"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              rose: '#f7aba9',
+              'rose-dark': '#e2918e',
+              'rose-light': '#fdf2f2',
+              'rose-soft': 'rgba(247, 171, 169, 0.15)',
+              cream: '#fcfaf7',
+              sand: '#f5eee6',
+              gold: '#c99f6f',
+              dark: '#211c1c',
+              muted: '#685f5f'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            display: ['Italiana', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Luxury Touches */
+    .glass-nav {
+      background: rgba(252, 250, 247, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(247, 171, 169, 0.25);
+    }
+    .badge-shimmer {
+      background: linear-gradient(120deg, #f7aba9 0%, #fef3f2 50%, #f7aba9 100%);
+      background-size: 200% auto;
+      animation: shimmer 4s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+    .glow-rose {
+      box-shadow: 0 10px 30px -8px rgba(247, 171, 169, 0.45);
+    }
+    .video-card-shadow {
+      box-shadow: 0 18px 45px -10px rgba(33, 28, 28, 0.18);
+    }
+    /* Hide scrollbars for story carousels */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Equalizer Sound Waves for Voice Speaking and Listening */
+    @keyframes soundWave {
+      0%, 100% { height: 4px; }
+      50% { height: 16px; }
+    }
+    .wave-bar {
+      display: inline-block;
+      width: 2.5px;
+      min-height: 4px;
+      background-color: #f7aba9;
+      border-radius: 9999px;
+      animation: soundWave 0.9s ease-in-out infinite;
+      transform-origin: bottom;
+    }
+    .wave-bar:nth-child(1) { animation-delay: 0.0s; height: 5px; }
+    .wave-bar:nth-child(2) { animation-delay: 0.18s; height: 14px; }
+    .wave-bar:nth-child(3) { animation-delay: 0.36s; height: 18px; }
+    .wave-bar:nth-child(4) { animation-delay: 0.12s; height: 10px; }
+    .wave-bar:nth-child(5) { animation-delay: 0.28s; height: 7px; }
+
+    /* Message Bubble Entry Animations */
+    @keyframes msgInRight {
+      from { opacity: 0; transform: translateY(10px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes msgInLeft {
+      from { opacity: 0; transform: translateY(10px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .msg-anim-right {
+      animation: msgInRight 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .msg-anim-left {
+      animation: msgInLeft 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Floating Widget Button & Tooltip Glow */
+    @keyframes floatGlow {
+      0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 10px 25px -4px rgba(226, 145, 142, 0.45), 0 0 0 0 rgba(247, 171, 169, 0.5);
+      }
+      50% {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 35px -6px rgba(226, 145, 142, 0.6), 0 0 0 10px rgba(247, 171, 169, 0);
+      }
+    }
+    .btn-floating-glow {
+      animation: floatGlow 3.5s ease-in-out infinite;
+    }
+
+    @keyframes tooltipPop {
+      0% { opacity: 0; transform: translateX(12px) scale(0.92); }
+      100% { opacity: 1; transform: translateX(0) scale(1); }
+    }
+    .tooltip-pop {
+      animation: tooltipPop 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Mic Ripple Active Recording */
+    @keyframes micRipple {
+      0% { box-shadow: 0 0 0 0 rgba(247, 171, 169, 0.8); }
+      70% { box-shadow: 0 0 0 16px rgba(247, 171, 169, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(247, 171, 169, 0); }
+    }
+    .mic-recording {
+      animation: micRipple 1.4s infinite;
+    }
+
+    /* Chat Window Smooth Transition */
+    #chatWindow {
+      transform-origin: bottom right;
+      transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #chatWindow.chat-closed {
+      opacity: 0;
+      transform: scale(0.88) translateY(18px);
+      pointer-events: none;
+    }
+    #chatWindow.chat-open {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Gentle Hero Floating Badges */
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    .float-subtle {
+      animation: gentleFloat 4.2s ease-in-out infinite;
+    }
+    .float-subtle-delay {
+      animation: gentleFloat 4.2s ease-in-out infinite 2.1s;
+    }
+
+    /* Confetti Particle Burst Keyframe */
+    @keyframes confettiFall {
+      0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+      100% { transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0); opacity: 0; }
+    }
+    .confetti-particle {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      pointer-events: none;
+      animation: confettiFall 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      border-radius: 2px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-rose selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-dark text-brand-cream text-xs sm:text-sm py-2 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-brand-rose animate-ping"></span>
+    <span>✨ <strong>First-Time Client Privilege:</strong> Save $30 on your Signature Revive Facial with code <span class="text-brand-rose font-bold">GLOW30</span></span>
+    <a href="#voucher" class="underline hover:text-brand-rose transition-colors ml-1 hidden sm:inline">Claim Voucher</a>
+  </div>
+
+  <!-- Sticky Luxury Header -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-brand-rose/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="assets/Logo-Revive-02.png" alt="Revive Skin Care Studio Logo" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#experience" class="text-brand-dark/80 hover:text-brand-rose-dark transition-colors">The 90-Min Experience</a>
+        <a href="#modalities" class="text-brand-dark/80 hover:text-brand-rose-dark transition-colors">What's Included</a>
+        <a href="#videos" class="text-brand-dark/80 hover:text-brand-rose-dark transition-colors">Treatment In Action</a>
+        <a href="#reviews" class="text-brand-dark/80 hover:text-brand-rose-dark transition-colors">Reviews</a>
+        <a href="#faq" class="text-brand-dark/80 hover:text-brand-rose-dark transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Right CTAs -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+12033914983" class="hidden lg:flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-brand-dark/90 hover:text-brand-rose-dark px-3 py-2">
+          <svg class="w-4 h-4 text-brand-rose-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          (203) 391-4983
+        </a>
+        <a href="https://www.vagaro.com/reviveskincarestudio/services" target="_blank" rel="noopener noreferrer" class="bg-brand-dark hover:bg-brand-rose-dark text-white text-xs sm:text-sm font-medium px-4 sm:px-6 py-2.5 rounded-full transition-all duration-300 shadow hover:shadow-lg flex items-center gap-2">
+          <span>Book on Vagaro</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+    <!-- Subtle Background Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-rose/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/2 right-0 w-[400px] h-[400px] bg-brand-sand/60 rounded-full blur-2xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Trust Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-brand-rose/30 shadow-sm text-xs font-semibold tracking-wide text-brand-dark">
+            <span class="flex text-amber-400">
+              ★★★★★
+            </span>
+            <span class="text-brand-muted">|</span>
+            <span>Stamford's Premier Medical Aesthetic Studio</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-brand-dark leading-[1.15]">
+            The Bespoke <span class="italic font-display font-light text-brand-rose-dark block sm:inline">90-Minute</span> Facial That Restores Your Radiance.
+          </h1>
+
+          <!-- Value Proposition -->
+          <p class="text-base sm:text-lg text-brand-muted font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Say goodbye to generic skincare. The <strong>Signature Revive Facial</strong> combines medical-grade Dermaplaning, Hyperbaric O2toDerm Oxygen, Targeted LED Light Dome, Custom Enzymes, and Sculpting Massage for an unmistakable, luminous <em>"Glass Skin"</em> glow.
+          </p>
+
+          <!-- Core Value Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs font-medium text-brand-dark/90">
+            <div class="flex items-center gap-2 bg-white/60 p-2.5 rounded-xl border border-brand-rose/15">
+              <svg class="w-4 h-4 text-brand-rose-dark flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>90 Full Minutes</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/60 p-2.5 rounded-xl border border-brand-rose/15">
+              <svg class="w-4 h-4 text-brand-rose-dark flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Zero Downtime</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/60 p-2.5 rounded-xl border border-brand-rose/15 col-span-2 sm:col-span-1">
+              <svg class="w-4 h-4 text-brand-rose-dark flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>100% Customized</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#voucher" class="w-full sm:w-auto text-center bg-brand-rose-dark hover:bg-brand-dark text-white font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg glow-rose hover:scale-[1.02]">
+              Claim $30 First-Visit Voucher
+            </a>
+            <button onclick="openChatBot('tell me more about the signature revive facial')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/80 hover:bg-white text-brand-dark font-medium px-6 py-4 rounded-full border border-brand-rose/30 transition-all duration-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Ask Aesthetician Chatbot</span>
+            </button>
+          </div>
+
+          <!-- Price & Location Notice -->
+          <p class="text-xs text-brand-muted tracking-wide">
+            📍 13 Spring St, 2nd Fl, Stamford, CT • Serving Darien, Greenwich, New Canaan & Norwalk.
+          </p>
+
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Image Frame -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] sm:aspect-[4/5]">
+              <img src="assets/hero-facial.jpeg" alt="Signature Revive Facial Treatment at Revive Skin Care Studio" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-transparent"></div>
+              
+              <!-- Floating Overlay Tag -->
+              <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-2xl border border-white/40 shadow-lg text-brand-dark">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-[11px] uppercase tracking-wider font-semibold text-brand-rose-dark">Service Spotlight</span>
+                    <h3 class="font-serif font-semibold text-base sm:text-lg">Signature Revive Facial</h3>
+                    <p class="text-xs text-brand-muted">Comprehensive 90-minute treatment</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-xs line-through text-brand-muted">$225</span>
+                    <div class="text-xl font-bold text-brand-dark">$195<span class="text-xs font-normal text-brand-muted"> /1st visit</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Glass Skin -->
+            <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-brand-rose/30 flex items-center gap-3 float-subtle">
+              <div class="w-10 h-10 rounded-full bg-brand-rose-light flex items-center justify-center text-brand-rose-dark text-lg">
+                ✨
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-brand-muted font-bold">Visible Effect</p>
+                <p class="text-xs font-bold text-brand-dark">Instant "Glass Skin" Radiance</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Vagaro 5 Stars -->
+            <div class="absolute -bottom-4 -right-4 sm:-right-6 bg-white p-3.5 rounded-2xl shadow-xl border border-brand-rose/30 flex items-center gap-3 float-subtle-delay">
+              <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-500 font-bold text-sm">
+                5.0
+              </div>
+              <div>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
+                <p class="text-[11px] font-semibold text-brand-dark">Top Rated on Vagaro</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Areas Bar -->
+  <section class="border-y border-brand-rose/20 bg-brand-sand/50 py-5">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-xs uppercase tracking-widest text-brand-muted font-semibold mb-3">
+        Welcoming Clients From Across Fairfield County
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-sm font-medium text-brand-dark/80">
+        <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-rose-dark"></span> Stamford</span>
+        <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-rose-dark"></span> Darien</span>
+        <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-rose-dark"></span> Greenwich</span>
+        <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-rose-dark"></span> New Canaan</span>
+        <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-rose-dark"></span> Norwalk</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 6 Modalities Breakdown Section -->
+  <section id="modalities" class="py-20 lg:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Complete Multimodal Protocol</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif text-brand-dark font-normal">
+          Why It’s More Than Just a Facial. <br class="hidden sm:inline"><span class="italic font-display text-brand-rose-dark">6 Advanced Treatments in One.</span>
+        </h2>
+        <p class="text-brand-muted text-base sm:text-lg font-light">
+          Unlike standard 50-minute salon cleansings, the Signature Revive is an unhurried 90-minute restorative medical ritual engineered to deliver immediate and progressive skin results.
+        </p>
+      </div>
+
+      <!-- Grid of 6 Sub-services -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Step 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-brand-rose/25 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose-light text-brand-rose-dark font-serif text-xl font-bold flex items-center justify-center mb-6 group-hover:bg-brand-rose-dark group-hover:text-white transition-colors">
+            01
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">Deep Skin Analysis & Prep</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Jennifer meticulously examines your skin barrier, lipid levels, sensitivity markers, and current hydration to customize every active ingredient used throughout your session.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-brand-rose/25 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose-light text-brand-rose-dark font-serif text-xl font-bold flex items-center justify-center mb-6 group-hover:bg-brand-rose-dark group-hover:text-white transition-colors">
+            02
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">Dermaplaning & Microdermabrasion</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Gently sweeps away layers of dull, accumulated dead skin cells and peach fuzz. Allows active serums to penetrate up to 80% deeper while leaving a silky-smooth canvas.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-brand-rose/25 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose-light text-brand-rose-dark font-serif text-xl font-bold flex items-center justify-center mb-6 group-hover:bg-brand-rose-dark group-hover:text-white transition-colors">
+            03
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">Tailored Enzyme / Gentle Chemical Peel</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            A non-aggressive resurfacing blend chosen specifically for your skin type to melt away stubborn sebum, fade discoloration, and refine texture without redness or flaking.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white rounded-3xl p-8 border border-brand-rose/25 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose-light text-brand-rose-dark font-serif text-xl font-bold flex items-center justify-center mb-6 group-hover:bg-brand-rose-dark group-hover:text-white transition-colors">
+            04
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">Painless Ultrasonic Extractions</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Gentle, sterile clearance of clogged pores and congestion without pinching or bruising. Skin breathes freely while pores appear visibly tighter.
+          </p>
+        </div>
+
+        <!-- Step 5: Highlight O2toDerm -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-brand-rose shadow-md hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden">
+          <span class="absolute top-4 right-4 bg-brand-rose-light text-brand-rose-dark text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">Client Favorite</span>
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose text-white font-serif text-xl font-bold flex items-center justify-center mb-6">
+            05
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">O2toDerm Oxygen + LED Dome</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Known as the celebrity "Glass Facial." A specialized dome delivers 90% pure anion oxygen and therapeutic LED light waves to stimulate collagen and regenerate damaged skin cells.
+          </p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="bg-white rounded-3xl p-8 border border-brand-rose/25 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-brand-rose-light text-brand-rose-dark font-serif text-xl font-bold flex items-center justify-center mb-6 group-hover:bg-brand-rose-dark group-hover:text-white transition-colors">
+            06
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-brand-dark mb-2">Sculpting Neck, Arm & Chest Massage</h3>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Mechanical neck and arm exfoliation paired with an exquisite lymphatic drainage massage. Releases muscle tension while promoting systemic circulation and relaxation.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Feature Highlight Row with Real Generated Assets -->
+      <div class="mt-16 bg-white rounded-3xl overflow-hidden border border-brand-rose/20 shadow-xl grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div class="p-8 sm:p-12 space-y-6">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">The Secret to That Event-Ready Glow</span>
+          <h3 class="text-2xl sm:text-3xl font-serif text-brand-dark">Hyperbaric Anion Oxygen & Healing LED Waves</h3>
+          <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+            The O2toDerm dome creates a sterile hyperbaric environment where your skin absorbs high-potency vitamins and negative ions. It directly neutralizes free radicals, kills acne-causing bacteria, and pumps moisture deep into intercellular layers.
+          </p>
+          <ul class="space-y-2 text-sm text-brand-dark font-medium">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-rose-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Revitalizes tired, dehydrated, or stressed skin
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-rose-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Reduces inflammation, rosacea redness, and blemish swelling
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-rose-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Perfect 24–48 hours before galas, photoshoots, and weddings
+            </li>
+          </ul>
+          <div class="pt-2">
+            <a href="https://www.vagaro.com/reviveskincarestudio/services" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-dark hover:text-brand-rose-dark border-b-2 border-brand-rose pb-1 transition-colors">
+              <span>Book Your Session on Vagaro</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="h-full min-h-[340px] relative">
+          <img src="assets/oxygen-dome.jpeg" alt="O2toDerm Oxygen Therapy Dome at Revive Skin Care" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- Botanical Actives & Clinical Formulation Highlight with Travertine Image -->
+      <div class="mt-12 bg-brand-sand/60 rounded-3xl overflow-hidden border border-brand-rose/20 shadow-lg grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div class="h-full min-h-[320px] relative order-2 lg:order-1">
+          <img src="assets/products-travertine.jpeg" alt="Botanical enzymes and luxury skincare formulations at Revive" class="w-full h-full object-cover">
+        </div>
+        <div class="p-8 sm:p-12 space-y-5 order-1 lg:order-2">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Formulated For Your Skin</span>
+          <h3 class="text-2xl sm:text-3xl font-serif text-brand-dark">Clinical-Grade Botanicals, Zero Harsh Fillers</h3>
+          <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+            Every serum, enzyme mask, and active treatment applied during the Signature Facial is curated for cellular biocompatibility. We blend botanical antioxidants, hyaluronic acid tri-molecules, and soothing peptides that calm irritation and lock in sustained luminosity.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-xs font-semibold text-brand-dark pt-1">
+            <div class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">✓</span> Paraben & Fragrance Free
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">✓</span> Barrier Restorative
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">✓</span> Clean Clinical Actives
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">✓</span> Cruelty-Free & Ethical
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Story Reels: Treatment In Action -->
+  <section id="videos" class="py-20 bg-brand-sand/40 border-y border-brand-rose/20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Authentic Studio Moments</span>
+          <h2 class="text-3xl sm:text-4xl font-serif text-brand-dark mt-1">See the Treatment in Action</h2>
+          <p class="text-brand-muted text-sm sm:text-base mt-2">Real moments recorded directly in our treatment room in Stamford, CT.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="scrollReels(-1)" aria-label="Previous reel" class="w-10 h-10 rounded-full bg-white border border-brand-rose/30 flex items-center justify-center hover:bg-brand-rose hover:text-white transition-colors">
+            ←
+          </button>
+          <button onclick="scrollReels(1)" aria-label="Next reel" class="w-10 h-10 rounded-full bg-white border border-brand-rose/30 flex items-center justify-center hover:bg-brand-rose hover:text-white transition-colors">
+            →
+          </button>
+        </div>
+      </div>
+
+      <!-- Reels Carousel Container -->
+      <div id="reelsContainer" class="flex gap-6 overflow-x-auto no-scrollbar pb-6 scroll-smooth snap-x snap-mandatory">
+        
+        <!-- Video Card 1 -->
+        <div class="snap-start flex-shrink-0 w-64 sm:w-72 bg-brand-dark rounded-3xl overflow-hidden video-card-shadow relative group aspect-[9/16]">
+          <video class="w-full h-full object-cover cursor-pointer" loop muted playsinline preload="metadata" poster="assets/thumbnails/WhatsApp Video 2026-09-17 at 11.37.26.jpg" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="togglePlay(this)">
+            <source src="assets/treatment-video-5.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-black/30 pointer-events-none"></div>
+          <div class="absolute top-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-[11px] text-white flex items-center gap-1.5 pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+            <span>Treatment</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+            <p class="text-xs text-brand-rose font-medium">Step Highlight</p>
+            <p class="text-sm font-semibold leading-snug">Dermaplaning Precision & Exfoliation</p>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="snap-start flex-shrink-0 w-64 sm:w-72 bg-brand-dark rounded-3xl overflow-hidden video-card-shadow relative group aspect-[9/16]">
+          <video class="w-full h-full object-cover cursor-pointer" loop muted playsinline preload="metadata" poster="assets/thumbnails/WhatsApp Video 2026-09-17 at 11.34.52.jpg" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="togglePlay(this)">
+            <source src="assets/treatment-video-2.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-black/30 pointer-events-none"></div>
+          <div class="absolute top-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-[11px] text-white flex items-center gap-1.5 pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+            <span>Technique</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+            <p class="text-xs text-brand-rose font-medium">Oxygen Infusion</p>
+            <p class="text-sm font-semibold leading-snug">Pure Hydration & LED Glow</p>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="snap-start flex-shrink-0 w-64 sm:w-72 bg-brand-dark rounded-3xl overflow-hidden video-card-shadow relative group aspect-[9/16]">
+          <video class="w-full h-full object-cover cursor-pointer" loop muted playsinline preload="metadata" poster="assets/thumbnails/VIDEO-2026-09-17-11-20-09.jpg" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="togglePlay(this)">
+            <source src="assets/treatment-video-1.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-black/30 pointer-events-none"></div>
+          <div class="absolute top-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-[11px] text-white flex items-center gap-1.5 pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+            <span>Results</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+            <p class="text-xs text-brand-rose font-medium">Post-Treatment</p>
+            <p class="text-sm font-semibold leading-snug">The Signature Revive Glass Glow</p>
+          </div>
+        </div>
+
+        <!-- Video Card 4 -->
+        <div class="snap-start flex-shrink-0 w-64 sm:w-72 bg-brand-dark rounded-3xl overflow-hidden video-card-shadow relative group aspect-[9/16]">
+          <video class="w-full h-full object-cover cursor-pointer" loop muted playsinline preload="metadata" poster="assets/thumbnails/WhatsApp Video 2026-09-17 at 11.41.42.jpg" onmouseenter="this.play()" onmouseleave="this.pause()" onclick="togglePlay(this)">
+            <source src="assets/treatment-video-13.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-black/30 pointer-events-none"></div>
+          <div class="absolute top-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-[11px] text-white flex items-center gap-1.5 pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+            <span>Relaxation</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+            <p class="text-xs text-brand-rose font-medium">Therapy</p>
+            <p class="text-sm font-semibold leading-snug">Lymphatic Drainage & Massage</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center text-xs text-brand-muted mt-4">
+        💡 <em>Tip: Tap or hover over any video to preview the technique in motion.</em>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Special First-Time Client Voucher Section -->
+  <section id="voucher" class="py-20 lg:py-24 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="relative bg-gradient-to-br from-brand-dark to-[#2c2222] rounded-[2.5rem] p-8 sm:p-14 text-white shadow-2xl overflow-hidden border border-brand-rose/30">
+        
+        <!-- Background subtle glow -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-rose/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -top-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-rose/20 border border-brand-rose/30 text-xs font-semibold text-brand-rose">
+              <span>🎟️ Social Media Exclusive Privilege</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-serif font-normal tracking-tight text-white">
+              Claim Your <span class="text-brand-rose italic">$30 Welcome Credit</span> For Your First Facial.
+            </h2>
+            <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed">
+              Experience the 90-minute Signature Revive Facial for <strong>$195</strong> (regularly $225). Includes a customized skin analysis, dermaplaning, peeling, O2toDerm oxygen dome, and full neck and chest massage.
+            </p>
+            <div class="flex items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-gray-400">
+              <span class="flex items-center gap-1.5">✓ Valid for 30 days</span>
+              <span class="flex items-center gap-1.5">✓ No pre-payment required</span>
+            </div>
+          </div>
+
+          <!-- Voucher Claim Card -->
+          <div class="lg:col-span-5 bg-white text-brand-dark p-6 sm:p-8 rounded-3xl shadow-xl border border-brand-rose/30">
+            <h3 class="font-serif font-semibold text-lg text-center mb-1">Instant Voucher Code</h3>
+            <p class="text-xs text-brand-muted text-center mb-4">Use this code at checkout on Vagaro or mention it during your visit:</p>
+            
+            <div class="bg-brand-rose-light border-2 border-dashed border-brand-rose rounded-2xl p-4 text-center mb-5 cursor-pointer hover:bg-brand-rose/20 transition-all duration-200 hover:scale-[1.02] active:scale-98 relative select-none group shadow-inner" onclick="copyVoucherCode(event)">
+              <span class="text-xs uppercase tracking-widest font-semibold text-brand-muted block">Your Promo Code</span>
+              <span id="voucherCodeText" class="text-2xl font-bold font-mono text-brand-dark tracking-wider group-hover:tracking-widest transition-all">GLOW30</span>
+              <span id="copyNotice" class="text-[11px] text-brand-rose-dark font-medium block mt-1">Tap to copy code ✨</span>
+            </div>
+
+            <a href="https://www.vagaro.com/reviveskincarestudio/services" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-brand-dark hover:bg-brand-rose-dark text-white font-medium py-3.5 px-4 rounded-full transition-all duration-300 shadow hover:shadow-lg text-sm">
+              Apply on Vagaro & Book Now →
+            </a>
+            
+            <p class="text-[10px] text-center text-brand-muted mt-3">
+              Direct booking through Vagaro official schedule.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Meet Aesthetician Jennifer Section -->
+  <section class="py-20 bg-white border-b border-brand-rose/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 order-2 lg:order-1 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand aspect-[4/5]">
+            <img src="assets/facial-massage.jpeg" alt="Jennifer Aesthetician performing facial treatment at Revive Skin Care Studio" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-4 sm:right-6 glass-card p-5 rounded-2xl shadow-xl max-w-xs border border-brand-rose/30">
+            <p class="font-serif italic text-sm text-brand-dark">"Skin care is an art form. Every face is uniquely beautiful and deserves a tailored, meticulous approach."</p>
+            <p class="text-xs font-bold text-brand-rose-dark mt-2">— Jennifer, Founder & Aesthetician</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Personalized Care</span>
+          <h2 class="text-3xl sm:text-4xl font-serif text-brand-dark font-normal">
+            Meet Jennifer: Your Dedicated Skin Health Partner.
+          </h2>
+          <p class="text-brand-muted text-base leading-relaxed">
+            At Revive Skin Care Studio, you never experience cookie-cutter, rushed appointments. Jennifer is a passionate, licensed aesthetician dedicated to elevating your natural beauty through advanced clinical protocols combined with deep, holistic relaxation.
+          </p>
+          <p class="text-brand-muted text-base leading-relaxed">
+            Whether preparing for a high-profile Stamford event, clearing hormonal breakouts, or targeting signs of aging, Jennifer personally oversees every step of your 90-minute treatment in a serene, private boutique atmosphere.
+          </p>
+          <div class="grid grid-cols-2 gap-4 pt-2">
+            <div class="border-l-2 border-brand-rose pl-4">
+              <h4 class="font-bold text-lg text-brand-dark">1-on-1 Focus</h4>
+              <p class="text-xs text-brand-muted">Private, dedicated studio suite with zero distractions.</p>
+            </div>
+            <div class="border-l-2 border-brand-rose pl-4">
+              <h4 class="font-bold text-lg text-brand-dark">Medical-Grade Tech</h4>
+              <p class="text-xs text-brand-muted">Hyperbaric O2toDerm, LED domes & clinical peel actives.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Reviews Section -->
+  <section id="reviews" class="py-20 lg:py-28 bg-brand-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Client Testimonials</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-brand-dark">Loved by Clients Across Fairfield County</h2>
+        <div class="flex items-center justify-center gap-1 text-amber-400 text-lg">
+          ★★★★★
+        </div>
+        <p class="text-xs text-brand-muted font-medium">Verified 5.0 Star Ratings on Google & Vagaro</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-3xl border border-brand-rose/20 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+              "The Signature Revive Facial is the best facial I have ever had! Jennifer took her time with every step. My skin was literally glowing for three weeks straight. The oxygen dome was so relaxing!"
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-rose/15 mt-6 flex items-center justify-between">
+            <div>
+              <h4 class="text-sm font-bold text-brand-dark">Victoria M.</h4>
+              <p class="text-[11px] text-brand-muted">Stamford, CT</p>
+            </div>
+            <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">Verified Client</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl border border-brand-rose/20 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+              "I had the Signature Facial right before my wedding weekend in Greenwich. Dermaplaning made my makeup go on like silk, and the redness disappeared completely thanks to the oxygen LED dome. Highly recommended!"
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-rose/15 mt-6 flex items-center justify-between">
+            <div>
+              <h4 class="text-sm font-bold text-brand-dark">Sarah K.</h4>
+              <p class="text-[11px] text-brand-muted">Greenwich, CT</p>
+            </div>
+            <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">Verified Client</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl border border-brand-rose/20 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <p class="text-sm text-brand-dark/90 italic leading-relaxed">
+              "Worth every single penny of the $225 ticket. You get a full 90 minutes of pure bliss, no rushing, and the shoulder/neck massage was heavenly. Jennifer really knows skin science."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-rose/15 mt-6 flex items-center justify-between">
+            <div>
+              <h4 class="text-sm font-bold text-brand-dark">Elena R.</h4>
+              <p class="text-[11px] text-brand-muted">Darien, CT</p>
+            </div>
+            <span class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">Verified Client</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section id="faq" class="py-20 bg-white border-t border-brand-rose/20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14 space-y-3">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Got Questions?</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-brand-dark">Frequently Asked Questions</h2>
+        <p class="text-sm text-brand-muted">Everything you need to know before your Signature Revive appointment.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-rose/20 transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif font-medium text-brand-dark text-lg">
+            <span>Is there any downtime or peeling after the Signature Facial?</span>
+            <span class="transition duration-300 group-open:-rotate-180 text-brand-rose-dark text-xl">▾</span>
+          </summary>
+          <div class="mt-4 text-sm text-brand-muted leading-relaxed">
+            None at all! The enzyme peel and modalities are formulated to nourish and regenerate your skin rather than burn it. You will leave with a dewy, glowing finish, and can immediately resume your daily routine.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-rose/20 transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif font-medium text-brand-dark text-lg">
+            <span>Does Dermaplaning hurt or cause hair to grow back thicker?</span>
+            <span class="transition duration-300 group-open:-rotate-180 text-brand-rose-dark text-xl">▾</span>
+          </summary>
+          <div class="mt-4 text-sm text-brand-muted leading-relaxed">
+            Dermaplaning is completely painless (it feels like a gentle scrape or light tickle). The vellus hair (peach fuzz) removed is physiologically incapable of growing back thicker or darker. It returns at the exact same texture within 3–4 weeks.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-rose/20 transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif font-medium text-brand-dark text-lg">
+            <span>Is this facial suitable for sensitive or acne-prone skin?</span>
+            <span class="transition duration-300 group-open:-rotate-180 text-brand-rose-dark text-xl">▾</span>
+          </summary>
+          <div class="mt-4 text-sm text-brand-muted leading-relaxed">
+            Yes, absolutely. Because Jennifer performs a custom skin analysis at the start, treatments are calibrated to your skin tolerance. In cases of active breakouts, extractions are handled with clinical care and the O2toDerm oxygen therapy accelerates healing.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-rose/20 transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif font-medium text-brand-dark text-lg">
+            <span>How long before an event or wedding should I schedule it?</span>
+            <span class="transition duration-300 group-open:-rotate-180 text-brand-rose-dark text-xl">▾</span>
+          </summary>
+          <div class="mt-4 text-sm text-brand-muted leading-relaxed">
+            We recommend scheduling your Signature Revive Facial <strong>24 to 72 hours</strong> prior to your big event. This timing allows the skin to fully settle into its maximum hydration and luminosity peak.
+          </div>
+        </details>
+
+        <details class="group bg-brand-cream rounded-2xl p-6 border border-brand-rose/20 transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-serif font-medium text-brand-dark text-lg">
+            <span>Where is the studio located and where do I park?</span>
+            <span class="transition duration-300 group-open:-rotate-180 text-brand-rose-dark text-xl">▾</span>
+          </summary>
+          <div class="mt-4 text-sm text-brand-muted leading-relaxed">
+            Revive Skin Care Studio is conveniently situated at <strong>13 Spring St, 2nd floor, Stamford CT 06901</strong> (inside the beautiful Verdz Beauty / Lash Brow Room suite). Street parking and nearby garage parking are easily accessible in downtown Stamford.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location Map & Booking CTA Section -->
+  <section class="py-16 bg-brand-sand/30 border-t border-brand-rose/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-brand-rose/25 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Visit Us In Downtown Stamford</span>
+          <h3 class="text-2xl sm:text-3xl font-serif text-brand-dark">Ready to Experience Your Most Radiant Skin?</h3>
+          <p class="text-sm sm:text-base text-brand-muted leading-relaxed">
+            Appointments fill up quickly, especially Thursday through Saturday. Secure your preferred time slot online with immediate confirmation through Vagaro.
+          </p>
+          <div class="space-y-2 pt-2 text-sm text-brand-dark">
+            <p class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">📍</span>
+              <strong>Address:</strong> 13 Spring St, 2nd Floor, Stamford, CT 06901
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-brand-rose-dark">📞</span>
+              <strong>Direct Phone:</strong> <a href="tel:+12033914983" class="hover:text-brand-rose-dark underline">+1 (203) 391-4983</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+          <a href="https://www.vagaro.com/reviveskincarestudio/services" target="_blank" rel="noopener noreferrer" class="text-center bg-brand-rose-dark hover:bg-brand-dark text-white font-medium py-4 px-6 rounded-full transition-all duration-300 shadow-md text-sm">
+            Book on Vagaro Now ($225)
+          </a>
+          <a href="https://maps.google.com/?q=13+Spring+St,+Stamford,+CT+06901" target="_blank" class="text-center bg-brand-cream hover:bg-white text-brand-dark font-medium py-3.5 px-6 rounded-full border border-brand-rose/30 transition-all duration-200 text-sm">
+            Open in Google Maps
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Minimalist Footer -->
+  <footer class="bg-brand-dark text-brand-cream/80 py-12 border-t border-white/10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="assets/Logo-Revive-03.png" alt="Revive Logo" class="h-8 w-auto brightness-200 contrast-125">
+        <span>© 2026 Revive Skin Care Studio. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://reviveskincarestudio.com/" class="hover:text-brand-rose transition-colors">Main Website</a>
+        <a href="https://reviveskincarestudio.com/contact-us/" class="hover:text-brand-rose transition-colors">Contact</a>
+        <a href="tel:+12033914983" class="hover:text-brand-rose transition-colors">+1 203 391 4983</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- FLOATING AI CHATBOT CONCIERGE WIDGET           -->
+  <!-- ============================================== -->
+  <div id="chatbotWidget" class="fixed bottom-6 right-6 z-50 flex items-end justify-end">
+    
+    <!-- Floating Concierge Invitation Pill (auto-hides when chat is opened) -->
+    <div id="chatPromoPill" onclick="toggleChatWindow()" class="cursor-pointer mb-2 mr-3 hidden sm:flex items-center gap-2.5 bg-brand-dark/95 backdrop-blur-md text-white pl-3.5 pr-4 py-2.5 rounded-full shadow-2xl border border-brand-rose/40 text-xs whitespace-nowrap hover:bg-black transition-all duration-300 tooltip-pop group hover:scale-105">
+      <span class="flex items-center gap-0.5 h-3">
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+      </span>
+      <span class="font-medium text-brand-cream tracking-wide">Ask Jennifer's Concierge • <span class="text-brand-rose">🎙️ Voice & Text</span></span>
+      <span class="text-brand-rose group-hover:translate-x-1 transition-transform font-bold">→</span>
+    </div>
+
+    <!-- Chat Toggle Button with Breathing Glow Aura -->
+    <button id="chatToggleBtn" onclick="toggleChatWindow()" class="relative bg-brand-rose-dark hover:bg-brand-dark text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center btn-floating-glow group" aria-label="Open Skin Care Concierge">
+      <!-- Notification Dot -->
+      <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white animate-pulse"></span>
+      
+      <!-- Chat Icon SVG -->
+      <svg id="chatIconOpen" class="w-6 h-6 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+      <svg id="chatIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Chat Window Container with Smooth Scale & Backdrop Blur -->
+    <div id="chatWindow" class="hidden chat-closed absolute bottom-16 right-0 w-[92vw] sm:w-[390px] h-[530px] max-h-[82vh] bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-brand-rose/30 flex flex-col overflow-hidden origin-bottom-right">
+      
+      <!-- Chat Header -->
+      <div class="bg-brand-dark text-white p-4 flex items-center justify-between border-b border-brand-rose/20 relative">
+        <div class="flex items-center gap-2.5">
+          <div class="relative">
+            <div class="w-9 h-9 rounded-full bg-brand-rose flex items-center justify-center text-white font-serif font-bold text-sm shadow-md">
+              R
+            </div>
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-brand-dark"></span>
+          </div>
+          <div>
+            <h4 class="font-serif text-sm font-semibold leading-tight flex items-center gap-1.5">
+              <span>Revive Concierge</span>
+              <span id="voiceBadge" class="text-[9px] bg-brand-rose/20 text-brand-rose px-1.5 py-0.5 rounded-full font-sans font-medium flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Voice Active</span>
+              </span>
+            </h4>
+            <div class="flex items-center gap-1.5">
+              <p id="voiceEngineLabel" class="text-[10px] text-brand-rose">Studio Voice • Mic & Text</p>
+              <!-- Live Equalizer Waveform (Visible during speaking) -->
+              <div id="headerVoiceWave" class="hidden items-center gap-0.5 h-3 ml-1">
+                <span class="wave-bar"></span>
+                <span class="wave-bar"></span>
+                <span class="wave-bar"></span>
+                <span class="wave-bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-1.5">
+          <!-- Language Selector -->
+          <div class="flex items-center bg-white/10 rounded-full p-0.5 text-[10px] font-semibold">
+            <button id="langEsBtn" type="button" onclick="setChatLanguage('es')" class="px-2 py-0.5 rounded-full text-white/70 hover:text-white transition-all">ES</button>
+            <button id="langEnBtn" type="button" onclick="setChatLanguage('en')" class="px-2 py-0.5 rounded-full bg-brand-rose text-white transition-all font-bold">EN</button>
+          </div>
+
+          <!-- Settings (Google Cloud API & Limits) -->
+          <button id="settingsBtn" type="button" onclick="toggleSettingsDrawer()" title="Voice & API Settings" class="p-1 rounded-full hover:bg-white/10 text-white/80 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </button>
+
+          <!-- Voice Mute/Unmute Toggle -->
+          <button id="toggleVoiceBtn" type="button" onclick="toggleVoiceAudio()" title="Toggle voice audio" class="p-1 rounded-full hover:bg-white/10 text-brand-rose transition-colors">
+            <svg id="voiceIconOn" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+            </svg>
+            <svg id="voiceIconOff" class="w-4 h-4 hidden text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z m11.414-4.586l4 4m0-4l-4 4"/>
+            </svg>
+          </button>
+          
+          <button onclick="toggleChatWindow()" class="text-gray-400 hover:text-white text-base p-1">✕</button>
+        </div>
+      </div>
+
+      <!-- Slide-down Settings Drawer (Google Gemini Brain & Google Cloud Voice) -->
+      <div id="settingsDrawer" class="hidden bg-gray-900 text-white p-4 border-b border-brand-rose/30 text-xs space-y-3 max-h-[70vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+          <span class="font-bold text-brand-rose uppercase tracking-wider text-[11px]">IA & Control de Gastos</span>
+          <button onclick="toggleSettingsDrawer()" class="text-gray-400 hover:text-white text-xs">Cerrar ✕</button>
+        </div>
+        
+        <!-- Gemini AI Brain Section -->
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between">
+            <label class="block font-semibold text-brand-rose text-[11px]">1. Cerebro IA (Google Gemini):</label>
+            <span class="text-[10px] text-emerald-400 font-mono">100% Free Tier</span>
+          </div>
+          <input id="geminiApiKeyInput" type="password" placeholder="Pega tu Gemini API Key (AIzaSy...)" class="w-full bg-black/60 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-rose">
+          <p class="text-[10px] text-gray-400 leading-tight">
+            Consíguela gratis en <a href="https://aistudio.google.com/app/apikey" target="_blank" class="text-brand-rose underline">aistudio.google.com</a>. Gemini lee la base de conocimiento de Revive en <code class="text-brand-rose font-mono">knowledge.js</code>.
+          </p>
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <div>
+              <label class="block text-[10px] text-gray-300">Tope Diario (Consultas):</label>
+              <input id="geminiDailyLimitInput" type="number" value="300" class="w-full bg-black/60 border border-gray-700 rounded-lg px-2 py-1 text-xs text-white">
+            </div>
+            <div>
+              <label class="block text-[10px] text-gray-300">Consultas hoy:</label>
+              <div id="geminiDailyUsageDisplay" class="text-xs font-mono text-emerald-400 pt-1">0 / 300</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-2 space-y-1.5">
+          <!-- Google Cloud TTS Voice Section -->
+          <div class="flex items-center justify-between">
+            <label class="block font-semibold text-brand-rose text-[11px]">2. Voz Humana (Google Text-to-Speech):</label>
+            <span class="text-[10px] text-gray-400 font-mono">Opcional</span>
+          </div>
+          <input id="googleApiKeyInput" type="password" placeholder="Google Cloud TTS Key (o usa la misma)" class="w-full bg-black/60 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-brand-rose">
+          <p class="text-[10px] text-gray-400 leading-tight">Activa las voces de estudio <strong>Neural2 / Journey</strong>. Si lo dejas vacío, usa la voz del navegador a $0 costo.</p>
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <div>
+              <label class="block text-[10px] text-gray-300">Tope Caracteres Voz:</label>
+              <input id="dailyCharLimitInput" type="number" value="15000" class="w-full bg-black/60 border border-gray-700 rounded-lg px-2 py-1 text-xs text-white">
+            </div>
+            <div>
+              <label class="block text-[10px] text-gray-300">Uso hoy:</label>
+              <div id="dailyUsageDisplay" class="text-xs font-mono text-emerald-400 pt-1">0 / 15000 chars</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-1 flex gap-2">
+          <button type="button" onclick="saveVoiceSettings()" class="flex-1 bg-brand-rose hover:bg-brand-rose-dark text-brand-dark font-bold py-2 rounded-xl transition-colors text-xs shadow-md">
+            Guardar Ajustes
+          </button>
+          <button type="button" onclick="testCurrentVoice()" class="bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-2 rounded-xl border border-white/20 text-xs transition-colors" title="Probar cómo se escucha la voz">
+            🔊 Probar Voz
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick FAQ Pills -->
+      <div id="quickFaqPills" class="p-3 bg-brand-sand/50 border-b border-brand-rose/15 flex gap-2 overflow-x-auto no-scrollbar text-xs font-medium">
+        <button onclick="sendQuickMessage('How much is the Signature Facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+          💵 Price & $30 OFF
+        </button>
+        <button onclick="sendQuickMessage('What is included in Signature Facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+          ✨ What's included?
+        </button>
+        <button onclick="sendQuickMessage('Is it safe for sensitive skin?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+          🌸 Sensitive skin?
+        </button>
+        <button onclick="sendQuickMessage('How do I book an appointment?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+          📅 How to book?
+        </button>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 text-xs sm:text-sm bg-brand-cream/40">
+        
+        <!-- Welcome Message -->
+        <div id="welcomeMessageBubble" class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-brand-rose-light text-brand-rose-dark font-serif font-bold text-xs flex items-center justify-center flex-shrink-0">
+            R
+          </div>
+          <div id="welcomeMessageText" class="bg-white p-3.5 rounded-2xl rounded-tl-sm border border-brand-rose/20 text-brand-dark shadow-sm max-w-[85%] leading-relaxed">
+            Hello! I am your Revive Voice & Chat Concierge. You can <strong>type your questions</strong> or tap the <strong>microphone 🎙️</strong> to speak with me in English or Español. How can I help your skin today?
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Listening Pulse Banner (Hidden by default) -->
+      <div id="listeningIndicator" class="hidden px-4 py-2.5 bg-gradient-to-r from-brand-rose-light via-brand-sand to-brand-rose-light border-t border-brand-rose/30 flex items-center justify-between text-xs text-brand-rose-dark font-medium shadow-inner">
+        <span class="flex items-center gap-2">
+          <!-- Animated Equalizer Waves -->
+          <span class="flex items-center gap-0.5 h-3.5">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </span>
+          <span id="listeningText">Listening in English... speak now</span>
+        </span>
+        <button onclick="stopSpeechRecognition()" class="text-[11px] underline text-brand-dark hover:text-brand-rose-dark font-bold">Cancel</button>
+      </div>
+
+      <!-- Chat Input Form with Mic -->
+      <form id="chatForm" onsubmit="handleUserMessage(event)" class="p-3 bg-white border-t border-brand-rose/20 flex gap-2 items-center">
+        <!-- Microphone Button -->
+        <button type="button" id="micBtn" onclick="toggleSpeechRecognition()" title="Speak with microphone" class="p-2.5 rounded-full bg-brand-sand hover:bg-brand-rose hover:text-white text-brand-dark transition-all duration-200 flex-shrink-0 relative group">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 003-3V5a3 3 0 10-6 0v6a3 3 0 003 3z"/>
+          </svg>
+        </button>
+
+        <input id="chatInput" type="text" placeholder="Type or tap mic to speak..." class="flex-1 text-xs sm:text-sm px-4 py-2.5 bg-brand-cream rounded-full border border-brand-rose/30 focus:outline-none focus:border-brand-rose-dark text-brand-dark placeholder:text-brand-muted">
+        
+        <button type="submit" class="bg-brand-rose-dark hover:bg-brand-dark text-white p-2.5 rounded-full transition-colors flex-shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript Functions -->
+  <script>
+    // Lightweight Confetti Celebration for Voucher Copy
+    function createConfettiBurst(anchorEl) {
+      if (!anchorEl) return;
+      const rect = anchorEl.getBoundingClientRect();
+      const colors = ['#f7aba9', '#e2918e', '#c99f6f', '#ffd166', '#ffffff', '#211c1c'];
+      const count = 28;
+
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement('div');
+        p.className = 'confetti-particle';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        p.style.backgroundColor = color;
+        p.style.left = (rect.left + rect.width / 2) + 'px';
+        p.style.top = (rect.top + rect.height / 2) + 'px';
+
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = 55 + Math.random() * 85;
+        const tx = Math.cos(angle) * velocity + 'px';
+        const ty = (Math.sin(angle) * velocity - 28) + 'px';
+        const rot = (Math.random() * 720 - 360) + 'deg';
+
+        p.style.setProperty('--tx', tx);
+        p.style.setProperty('--ty', ty);
+        p.style.setProperty('--rot', rot);
+        p.style.position = 'fixed';
+        p.style.zIndex = '9999';
+
+        document.body.appendChild(p);
+        setTimeout(() => p.remove(), 900);
+      }
+    }
+
+    // Copy voucher code function with confetti burst
+    function copyVoucherCode(event) {
+      const code = 'GLOW30';
+      const target = event ? (event.currentTarget || event.target) : document.getElementById('voucherCodeText');
+      navigator.clipboard.writeText(code).then(() => {
+        const notice = document.getElementById('copyNotice');
+        if (notice) {
+          notice.textContent = '✓ Copied to clipboard! Apply on Vagaro.';
+          notice.classList.add('text-emerald-600', 'font-bold');
+          setTimeout(() => {
+            notice.textContent = 'Tap to copy code ✨';
+            notice.classList.remove('text-emerald-600', 'font-bold');
+          }, 3000);
+        }
+        createConfettiBurst(target);
+      });
+    }
+
+    // Scroll reels
+    function scrollReels(direction) {
+      const container = document.getElementById('reelsContainer');
+      const scrollAmount = 300 * direction;
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+
+    // Toggle video playback on tap
+    function togglePlay(video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    // Toggle Voice Equalizer Speaking Waves (Header + Active Bot Bubble)
+    function setVoiceSpeaking(isSpeaking) {
+      const wave = document.getElementById('headerVoiceWave');
+      if (wave) {
+        if (isSpeaking) {
+          wave.classList.remove('hidden');
+          wave.classList.add('flex');
+        } else {
+          wave.classList.add('hidden');
+          wave.classList.remove('flex');
+        }
+      }
+      const bubbles = document.querySelectorAll('.speaking-bubble-wave');
+      bubbles.forEach(b => {
+        if (isSpeaking) {
+          b.classList.remove('hidden');
+          b.classList.add('flex');
+        } else {
+          b.classList.add('hidden');
+          b.classList.remove('flex');
+        }
+      });
+    }
+
+    // Chatbot logic with smooth scale & fade transition
+    let isChatOpen = false;
+    function toggleChatWindow() {
+      isChatOpen = !isChatOpen;
+      const chatWindow = document.getElementById('chatWindow');
+      const iconOpen = document.getElementById('chatIconOpen');
+      const iconClose = document.getElementById('chatIconClose');
+      const promoPill = document.getElementById('chatPromoPill');
+
+      if (isChatOpen) {
+        chatWindow.classList.remove('hidden');
+        void chatWindow.offsetWidth; // Force browser reflow for CSS transition
+        chatWindow.classList.remove('chat-closed');
+        chatWindow.classList.add('chat-open');
+        iconOpen.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+        if (promoPill) {
+          promoPill.classList.add('opacity-0', 'pointer-events-none');
+        }
+        setTimeout(() => document.getElementById('chatInput')?.focus(), 250);
+      } else {
+        chatWindow.classList.remove('chat-open');
+        chatWindow.classList.add('chat-closed');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        if (promoPill) {
+          promoPill.classList.remove('opacity-0', 'pointer-events-none');
+        }
+        setTimeout(() => {
+          if (!isChatOpen) chatWindow.classList.add('hidden');
+        }, 300);
+      }
+    }
+
+    function openChatBot(initialPrompt) {
+      if (!isChatOpen) toggleChatWindow();
+      if (initialPrompt) {
+        sendQuickMessage(initialPrompt);
+      }
+    }
+
+    function sendQuickMessage(text) {
+      document.getElementById('chatInput').value = text;
+      handleUserMessage(new Event('submit'));
+    }
+
+    // Intelligent Response Engine for Revive Skin Care Studio
+    function getBotResponse(userQuery) {
+      // Determine language strictly from current UI toggle
+      const isSpanish = (currentChatLang === 'es');
+
+      // Normalize string: lowercase, remove accents (e.g. cuánto -> cuanto, cuál -> cual)
+      const raw = (userQuery || '').toLowerCase();
+      const q = raw.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+      // 1. Voucher / Discount / GLOW30 promo
+      if (/(voucher|cupon|descuento|discount|glow30|30 off|oferta|promo|deal|rebaja)/i.test(q)) {
+        return isSpanish
+          ? "🎉 ¡Tu cupón especial de bienvenida es **GLOW30**! Te otorga **$30 de descuento** en tu Signature Revive Facial ($195 en lugar de $225). Puedes reservarlo en Vagaro haciendo clic aquí: <br><a href='https://www.vagaro.com/reviveskincarestudio/services' target='_blank' class='text-brand-rose-dark underline font-bold'>Reservar en Vagaro con GLOW30</a>"
+          : "🎉 Your special first-time client promo code is **GLOW30**! It gives you **$30 OFF** your Signature Revive Facial ($195 instead of $225). Book your spot directly on Vagaro here: <br><a href='https://www.vagaro.com/reviveskincarestudio/services' target='_blank' class='text-brand-rose-dark underline font-bold'>Book on Vagaro with GLOW30</a>";
+      }
+
+      // 2. Price / Cost / How much / Cuánto cuesta / Cuánto sale / Cuánto vale / Tarifas
+      if (/(precio|cost|cuanto|vale|sale|cuesta|cobran|tarif|valor|how much|price|pricing|rate|fee)/i.test(q)) {
+        return isSpanish
+          ? "El **Signature Revive Facial** tiene una duración completa de **90 minutos** y su precio regular es de **$225**. Con nuestro código de bienvenida **GLOW30** obtienes $30 OFF en tu primera visita, quedando en solo **$195**.<br><br>¡Incluye dermaplaning, peeling suave, extracciones ultrasónicas, cúpula de oxígeno puro O2toDerm con LED y masaje relajante!"
+          : "The **Signature Revive Facial** is a comprehensive **90-minute treatment** priced at **$225**. With our special welcome code **GLOW30**, your first session is only **$195** ($30 OFF).<br><br>It includes dermaplaning, gentle peel, ultrasonic extractions, O2toDerm pure oxygen + LED dome, and relaxing massage!";
+      }
+
+      // 3. What is included / Modalities / Steps
+      if (/(incluy|include|pasos|step|modalidad|modalit|que le hacen|que hacen|que trae|tratamiento|procedimiento|que se hace)/i.test(q)) {
+        return isSpanish
+          ? "El **Signature Revive Facial** incluye 6 modalidades clínicas:<br>1. Análisis cutáneo personalizado<br>2. Dermaplaning y microdermoabrasión (elimina células muertas y vello facial)<br>3. Peeling enzimático / químico suave sin pelado agresivo<br>4. Extracciones ultrasónicas limpias e indoloras<br>5. Cúpula de Oxígeno Puro O2toDerm + Terapia LED (el secreto del Glass Skin)<br>6. Masaje relajante de escote, brazos y cuello."
+          : "The **Signature Revive Facial** includes 6 clinical modalities:<br>1. Custom Skin Analysis<br>2. Dermaplaning & Microdermabrasion (clears dead skin & peach fuzz)<br>3. Tailored Gentle Enzyme / Chemical Peel<br>4. Painless Ultrasonic Extractions<br>5. O2toDerm Anion Oxygen + LED Dome (the Glass Skin secret)<br>6. Relaxing neck, chest & arm massage.";
+      }
+
+      // 4. Sensitive skin / Rosacea / Acne / Pain / Downtime / Pregnancy / Botox
+      if (/(sensib|rosacea|acne|duele|dolor|hurt|pain|irrit|rojez|redness|embaraz|pregnan|botox|filler|relleno|seguro|safe|downtime)/i.test(q)) {
+        if (q.includes('botox') || q.includes('filler') || q.includes('relleno')) {
+          return isSpanish
+            ? "Si recibiste Botox o rellenos recientemente, recomendamos esperar un mínimo de **14 días (2 semanas)** antes de realizarte el facial para permitir que el inyectable se asiente por completo."
+            : "If you recently received Botox or fillers, we recommend waiting a minimum of **14 days (2 weeks)** before your facial so the injectables settle properly.";
+        }
+        if (q.includes('embaraz') || q.includes('pregnan')) {
+          return isSpanish
+            ? "¡Es 100% seguro durante el embarazo y lactancia! Jennifer adapta todos los productos retirando exfoliantes contraindicados y usando enzimas naturales e hidratantes biocompatibles seguros para mamá y bebé."
+            : "It is 100% safe during pregnancy and breastfeeding! Jennifer customizes all products by omitting contraindicated acids and using baby-safe natural enzymes and deep hydration.";
+        }
+        return isSpanish
+          ? "¡Es 100% seguro y no duele en lo absoluto! Jennifer personaliza cada fórmula de acuerdo con tu piel (rosácea, acné o piel reactiva). La cúpula de oxígeno puro O2toDerm desinflama y calma rojeces al instante, dejando CERO tiempo de inactividad."
+          : "It is 100% safe and completely painless! Jennifer customizes every single product to your skin's condition (sensitive, rosacea, or acne-prone). The O2toDerm oxygen dome actively calms inflammation and redness immediately with zero downtime.";
+      }
+
+      // 5. Duration / How long
+      if (/(duracion|durar|dura|tiempo|cuanto tarda|tarda|how long|duration|minutes|minutos|90)/i.test(q)) {
+        return isSpanish
+          ? "El Signature Revive Facial dura **90 minutos completos** de cuidado clínico y relajación total. También contamos con el facial O2toDerm de 60 minutos ($190) si buscas una sesión más rápida."
+          : "The Signature Revive Facial takes **90 full minutes** of clinical skincare and deep relaxation. We also offer a 60-minute O2toDerm Facial ($190) if you are looking for a shorter session.";
+      }
+
+      // 6. Location / Address / Parking
+      if (/(donde|where|ubicacion|direccion|address|location|stamford|llegar|parqueo|estacionamiento|parking|suite|piso|floor)/i.test(q)) {
+        return isSpanish
+          ? "Estamos ubicados en **13 Spring St, 2nd floor, Stamford CT 06901** (dentro del espacio de Verdz Beauty / Lash Brow Room). Hay estacionamiento en la calle frente al estudio y garajes públicos a pocos pasos."
+          : "We are located at **13 Spring St, 2nd floor, Stamford CT 06901** (inside the Verdz Beauty / Lash Brow Room suite). Street parking and parking garages are right around the corner.";
+      }
+
+      // 7. Booking / Appointments / Schedule / Vagaro
+      if (/(book|reserv|cita|schedul|appoint|agenda|disponib|horario|hora|abren|open|vagaro|jennifer)/i.test(q)) {
+        return isSpanish
+          ? "Puedes consultar disponibilidad y agendar en línea al instante en nuestro calendario oficial de Vagaro: <br><a href='https://www.vagaro.com/reviveskincarestudio/services' target='_blank' class='inline-block mt-2 bg-brand-rose-dark text-white px-4 py-1.5 rounded-full font-semibold shadow-sm hover:opacity-90'>Agendar en Vagaro →</a><br>O si prefieres, llama directamente a Jennifer al <strong>+1 (203) 391-4983</strong>."
+          : "You can check availability and book online instantly through our official Vagaro calendar: <br><a href='https://www.vagaro.com/reviveskincarestudio/services' target='_blank' class='inline-block mt-2 bg-brand-rose-dark text-white px-4 py-1.5 rounded-full font-semibold shadow-sm hover:opacity-90'>Book on Vagaro →</a><br>Or call Jennifer directly at <strong>(203) 391-4983</strong>.";
+      }
+
+      // 8. Greeting / Hello / Hi
+      if (/(hola|buenos dias|buenas tardes|buenas noches|hello|hi|hey|good morning|good afternoon)/i.test(q)) {
+        return isSpanish
+          ? "¡Hola! Bienvenida a Revive Skin Care Studio. ¿Te gustaría conocer el Signature Facial de 90 minutos, consultar los precios o aprovechar el cupón **GLOW30** de $30 de descuento?"
+          : "Hello and welcome to Revive Skin Care Studio! Would you like to learn about our 90-minute Signature Facial, check our pricing, or claim your **GLOW30** code for $30 OFF?";
+      }
+
+      // Default Friendly Response
+      return isSpanish
+        ? "¡Gracias por tu mensaje! Jennifer o nuestro equipo pueden atenderte también por teléfono al <a href='tel:+12033914983' class='underline font-bold'>(203) 391-4983</a>. ¿Te gustaría agendar en Vagaro o conocer más sobre el Signature Facial de 90 minutos?"
+        : "Thank you for asking! Jennifer and our team are also available by phone at <a href='tel:+12033914983' class='underline font-bold'>(203) 391-4983</a>. Would you like to book on Vagaro or learn more about what makes our 90-minute Signature Facial unique?";
+    }
+
+    // ==============================================
+    // ADVANCED VOICE & GEMINI AI ENGINE
+    // ==============================================
+    let currentChatLang = 'en'; // Default to English, toggleable to Spanish
+
+    const GEMINI_CONFIG = {
+      apiKeyStorageKey: 'revive_gemini_api_key',
+      dailyLimitStorageKey: 'revive_gemini_daily_limit',
+      dailyUsageStorageKey: 'revive_gemini_daily_usage_date',
+      defaultDailyLimit: 300 // Safe default: 300 requests/day (Free tier allows 1,500/day!)
+    };
+
+    const VOICE_GUARDRAILS = {
+      maxVoicePerSession: 6, // Max audio plays per user visit
+      isMuted: false,
+      storageKey: 'revive_voice_queries_count',
+      apiKeyStorageKey: 'revive_google_tts_api_key',
+      dailyLimitStorageKey: 'revive_tts_daily_limit',
+      dailyUsageStorageKey: 'revive_tts_daily_usage_date',
+      defaultDailyCharLimit: 15000, // Safe default daily characters
+      preferredBrowserVoices: {
+        en: ['Google US English', 'Samantha', 'Victoria', 'Serena', 'en-US'],
+        es: ['Google español', 'Paulina', 'Mónica', 'es-US', 'es-ES', 'es-MX']
+      }
+    };
+
+    let recognition = null;
+    let isListening = false;
+    let currentAudioElement = null;
+
+    // Load saved settings
+    function loadSavedSettings() {
+      const savedKey = localStorage.getItem(VOICE_GUARDRAILS.apiKeyStorageKey) || '';
+      const savedLimit = localStorage.getItem(VOICE_GUARDRAILS.dailyLimitStorageKey) || VOICE_GUARDRAILS.defaultDailyCharLimit;
+      const savedGeminiKey = localStorage.getItem(GEMINI_CONFIG.apiKeyStorageKey) || '';
+      const savedGeminiLimit = localStorage.getItem(GEMINI_CONFIG.dailyLimitStorageKey) || GEMINI_CONFIG.defaultDailyLimit;
+      
+      const keyInput = document.getElementById('googleApiKeyInput');
+      const limitInput = document.getElementById('dailyCharLimitInput');
+      const geminiKeyInput = document.getElementById('geminiApiKeyInput');
+      const geminiLimitInput = document.getElementById('geminiDailyLimitInput');
+
+      if (keyInput) keyInput.value = savedKey;
+      if (limitInput) limitInput.value = savedLimit;
+      if (geminiKeyInput) geminiKeyInput.value = savedGeminiKey;
+      if (geminiLimitInput) geminiLimitInput.value = savedGeminiLimit;
+
+      updateVoiceEngineLabel();
+      updateDailyUsageDisplay();
+      updateGeminiUsageDisplay();
+    }
+
+    function toggleSettingsDrawer() {
+      const drawer = document.getElementById('settingsDrawer');
+      if (drawer) {
+        drawer.classList.toggle('hidden');
+        updateDailyUsageDisplay();
+        updateGeminiUsageDisplay();
+      }
+    }
+
+    function saveVoiceSettings() {
+      const keyInput = document.getElementById('googleApiKeyInput');
+      const limitInput = document.getElementById('dailyCharLimitInput');
+      const geminiKeyInput = document.getElementById('geminiApiKeyInput');
+      const geminiLimitInput = document.getElementById('geminiDailyLimitInput');
+
+      if (keyInput) localStorage.setItem(VOICE_GUARDRAILS.apiKeyStorageKey, keyInput.value.trim());
+      if (limitInput) localStorage.setItem(VOICE_GUARDRAILS.dailyLimitStorageKey, limitInput.value.trim() || '15000');
+      if (geminiKeyInput) localStorage.setItem(GEMINI_CONFIG.apiKeyStorageKey, geminiKeyInput.value.trim());
+      if (geminiLimitInput) localStorage.setItem(GEMINI_CONFIG.dailyLimitStorageKey, geminiLimitInput.value.trim() || '300');
+      
+      updateVoiceEngineLabel();
+      updateDailyUsageDisplay();
+      updateGeminiUsageDisplay();
+      toggleSettingsDrawer();
+      alert('Configuración y límites de consumo guardados exitosamente.');
+    }
+
+    function updateVoiceEngineLabel() {
+      const label = document.getElementById('voiceEngineLabel');
+      const hasGemini = !!(localStorage.getItem(GEMINI_CONFIG.apiKeyStorageKey) || localStorage.getItem(VOICE_GUARDRAILS.apiKeyStorageKey));
+      const hasTTS = !!(localStorage.getItem(VOICE_GUARDRAILS.apiKeyStorageKey) || localStorage.getItem(GEMINI_CONFIG.apiKeyStorageKey));
+      if (label) {
+        if (hasGemini && hasTTS) {
+          label.textContent = '🟢 Gemini AI + Studio Voice';
+        } else if (hasGemini) {
+          label.textContent = '🟢 Gemini AI (Cerebro)';
+        } else if (hasTTS) {
+          label.textContent = '🟢 Google Studio Voice';
+        } else {
+          label.textContent = '⚪ Modo Base Local ($0)';
+        }
+      }
+    }
+
+    // Daily limits & usage tracking for TTS
+    function getDailyUsage() {
+      const today = new Date().toISOString().slice(0, 10);
+      const record = JSON.parse(localStorage.getItem(VOICE_GUARDRAILS.dailyUsageStorageKey) || '{}');
+      if (record.date !== today) {
+        return { date: today, chars: 0 };
+      }
+      return record;
+    }
+
+    function recordDailyUsage(charCount) {
+      const current = getDailyUsage();
+      current.chars += charCount;
+      localStorage.setItem(VOICE_GUARDRAILS.dailyUsageStorageKey, JSON.stringify(current));
+      updateDailyUsageDisplay();
+    }
+
+    function updateDailyUsageDisplay() {
+      const disp = document.getElementById('dailyUsageDisplay');
+      if (!disp) return;
+      const usage = getDailyUsage();
+      const limit = parseInt(localStorage.getItem(VOICE_GUARDRAILS.dailyLimitStorageKey) || VOICE_GUARDRAILS.defaultDailyCharLimit, 10);
+      disp.textContent = `${usage.chars} / ${limit} chars`;
+      if (usage.chars >= limit) {
+        disp.classList.add('text-rose-400');
+        disp.classList.remove('text-emerald-400');
+      } else {
+        disp.classList.add('text-emerald-400');
+        disp.classList.remove('text-rose-400');
+      }
+    }
+
+    // Daily limits & usage tracking for Gemini AI
+    function getGeminiDailyUsage() {
+      const today = new Date().toISOString().slice(0, 10);
+      const record = JSON.parse(localStorage.getItem(GEMINI_CONFIG.dailyUsageStorageKey) || '{}');
+      if (record.date !== today) {
+        return { date: today, queries: 0 };
+      }
+      return record;
+    }
+
+    function recordGeminiDailyUsage() {
+      const current = getGeminiDailyUsage();
+      current.queries += 1;
+      localStorage.setItem(GEMINI_CONFIG.dailyUsageStorageKey, JSON.stringify(current));
+      updateGeminiUsageDisplay();
+    }
+
+    function updateGeminiUsageDisplay() {
+      const disp = document.getElementById('geminiDailyUsageDisplay');
+      if (!disp) return;
+      const usage = getGeminiDailyUsage();
+      const limit = parseInt(localStorage.getItem(GEMINI_CONFIG.dailyLimitStorageKey) || GEMINI_CONFIG.defaultDailyLimit, 10);
+      disp.textContent = `${usage.queries} / ${limit}`;
+      if (usage.queries >= limit) {
+        disp.classList.add('text-rose-400');
+        disp.classList.remove('text-emerald-400');
+      } else {
+        disp.classList.add('text-emerald-400');
+        disp.classList.remove('text-rose-400');
+      }
+    }
+
+    // Call Google Gemini Brain using knowledge.js context
+    async function callGeminiBrain(userMessage) {
+      // Check both keys so user only needs to paste their key once
+      const apiKey = localStorage.getItem(GEMINI_CONFIG.apiKeyStorageKey) || localStorage.getItem(VOICE_GUARDRAILS.apiKeyStorageKey);
+      if (!apiKey) return null; // No Gemini key, use instant local fallback
+
+      const usage = getGeminiDailyUsage();
+      const limit = parseInt(localStorage.getItem(GEMINI_CONFIG.dailyLimitStorageKey) || GEMINI_CONFIG.defaultDailyLimit, 10);
+
+      // HARD LIMIT: Stop calls immediately if limit reached to protect free tier!
+      if (usage.queries >= limit) {
+        console.warn('Tope diario de Gemini alcanzado para hoy. Usando base de conocimiento local.');
+        return null;
+      }
+
+      try {
+        const knowledgeText = (typeof REVIVE_KNOWLEDGE !== 'undefined') ? REVIVE_KNOWLEDGE : '';
+        const systemInstructionText = `Eres la asistente virtual y concierge de Revive Skin Care Studio en Stamford, CT.
+Responde SIEMPRE en ${currentChatLang === 'es' ? 'Español' : 'Inglés'}.
+Usa la siguiente base de conocimiento oficial para responder con calidez, elegancia, cortesía y precisión clínica.
+REGLAS OBLIGATORIAS:
+1. Mantén tus respuestas concisas (2 a 4 oraciones máximo) para que suenen naturales al ser habladas en voz alta por el sintetizador de voz.
+2. Si el usuario pregunta por precios, promociones o primera visita, menciona SIEMPRE el código de descuento "GLOW30" ($30 OFF en el Signature Revive Facial, quedando en $195 en vez de $225).
+3. Si el usuario quiere agendar o consultar disponibilidad, invítalo a reservar en Vagaro: https://www.vagaro.com/reviveskincarestudio/services o llamar a Jennifer al (203) 391-4983.
+4. No inventes precios ni servicios que no existan en la base de datos.
+
+BASE DE CONOCIMIENTO DE REVIVE:
+${knowledgeText}`;
+
+        // Attempt gemini-1.5-flash first, and fallback to gemini-2.0-flash if needed
+        let response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            system_instruction: {
+              parts: [{ text: systemInstructionText }]
+            },
+            contents: [
+              { role: 'user', parts: [{ text: userMessage }] }
+            ],
+            generationConfig: {
+              temperature: 0.7,
+              maxOutputTokens: 250
+            }
+          })
+        });
+
+        if (!response.ok) {
+          response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              system_instruction: {
+                parts: [{ text: systemInstructionText }]
+              },
+              contents: [
+                { role: 'user', parts: [{ text: userMessage }] }
+              ],
+              generationConfig: {
+                temperature: 0.7,
+                maxOutputTokens: 250
+              }
+            })
+          });
+        }
+
+        if (!response.ok) {
+          console.warn('Gemini API returned status:', response.status);
+          return null;
+        }
+
+        const data = await response.json();
+        const candidateText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (candidateText) {
+          recordGeminiDailyUsage();
+          return candidateText.trim();
+        }
+      } catch (err) {
+        console.warn('Gemini request failed, falling back to local engine:', err);
+      }
+      return null;
+    }
+
+    // Automatic Language Detection Engine (Spanish <-> English)
+    function detectLanguage(text, fallbackLang = 'en') {
+      const clean = (text || '').toLowerCase().trim();
+      if (!clean) return fallbackLang;
+
+      // 1. Check strong Spanish characters (accents, tildes, punctuation)
+      const spanishChars = (clean.match(/[áéíóúñ¿¡ü]/g) || []).length;
+
+      // 2. High-frequency distinctive Spanish vocabulary
+      const spanishWords = new Set([
+        'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del', 'en', 'para', 'por', 'con',
+        'que', 'como', 'donde', 'cuando', 'cuanto', 'cuanta', 'cuantos', 'cuantas',
+        'es', 'son', 'esta', 'estan', 'hola', 'buenas', 'buenos', 'gracias', 'favor',
+        'precio', 'precios', 'costo', 'costos', 'cita', 'citas', 'turno', 'agendar', 'reservar',
+        'quiero', 'puedo', 'tienen', 'tiene', 'hacen', 'incluye', 'incluyen', 'duele', 'piel',
+        'rostro', 'ubicacion', 'direccion', 'horario', 'telefono', 'descuento', 'cupon', 'vale', 'sale'
+      ]);
+
+      // 3. High-frequency distinctive English vocabulary
+      const englishWords = new Set([
+        'the', 'a', 'an', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'and', 'or',
+        'is', 'are', 'was', 'were', 'what', 'whats', 'where', 'wheres', 'how', 'when', 'why', 'who',
+        'much', 'many', 'cost', 'costs', 'price', 'prices', 'pricing', 'book', 'booking',
+        'appointment', 'facial', 'facials', 'skin', 'face', 'hello', 'hi', 'hey', 'thanks', 'thank',
+        'please', 'can', 'could', 'would', 'should', 'do', 'does', 'have', 'has', 'want', 'need',
+        'include', 'includes', 'hurt', 'safe', 'location', 'address', 'hours', 'phone', 'discount', 'voucher'
+      ]);
+
+      const norm = clean.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, ' ');
+      const tokens = norm.split(/\s+/).filter(Boolean);
+
+      let esScore = spanishChars * 2;
+      let enScore = 0;
+
+      tokens.forEach(tok => {
+        if (spanishWords.has(tok)) esScore += 1;
+        if (englishWords.has(tok)) enScore += 1;
+      });
+
+      // English common contractions
+      if (/(\b(i\'m|you\'re|it\'s|what\'s|where\'s|don\'t|can\'t|won\'t|we\'re)\b)/i.test(clean)) {
+        enScore += 2;
+      }
+
+      if (esScore > enScore) return 'es';
+      if (enScore > esScore) return 'en';
+      if (spanishChars > 0) return 'es';
+
+      return fallbackLang;
+    }
+
+    // Toggle Chat Language (Spanish <-> English)
+    function setChatLanguage(lang) {
+      currentChatLang = lang;
+      const esBtn = document.getElementById('langEsBtn');
+      const enBtn = document.getElementById('langEnBtn');
+      const input = document.getElementById('chatInput');
+      const faqContainer = document.getElementById('quickFaqPills');
+      const welcomeText = document.getElementById('welcomeMessageText');
+      const chatMessages = document.getElementById('chatMessages');
+
+      if (lang === 'es') {
+        if (esBtn) esBtn.className = 'px-2 py-0.5 rounded-full bg-brand-rose text-white transition-all font-bold';
+        if (enBtn) enBtn.className = 'px-2 py-0.5 rounded-full text-white/70 hover:text-white transition-all';
+        if (input) input.placeholder = 'Escribe o toca el micrófono para hablar...';
+
+        if (faqContainer) {
+          faqContainer.innerHTML = `
+            <button onclick="sendQuickMessage('¿Cuánto cuesta el facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              💵 Precio y $30 OFF
+            </button>
+            <button onclick="sendQuickMessage('¿Qué incluye el Signature Facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              ✨ ¿Qué incluye?
+            </button>
+            <button onclick="sendQuickMessage('¿Es seguro para piel sensible?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              🌸 ¿Piel sensible?
+            </button>
+            <button onclick="sendQuickMessage('¿Cómo puedo agendar una cita?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              📅 ¿Cómo agendar?
+            </button>
+          `;
+        }
+
+        // Translate initial welcome message if user hasn't started conversation yet
+        if (welcomeText && chatMessages && chatMessages.children.length <= 1) {
+          welcomeText.innerHTML = "¡Hola! Soy tu asistente de voz y concierge de Revive. Puedes <strong>escribir tus preguntas</strong> o tocar el <strong>micrófono 🎙️</strong> para hablar conmigo en español o inglés. ¿En qué puedo ayudarte hoy?";
+        }
+      } else {
+        if (enBtn) enBtn.className = 'px-2 py-0.5 rounded-full bg-brand-rose text-white transition-all font-bold';
+        if (esBtn) esBtn.className = 'px-2 py-0.5 rounded-full text-white/70 hover:text-white transition-all';
+        if (input) input.placeholder = 'Type or tap mic to speak...';
+
+        if (faqContainer) {
+          faqContainer.innerHTML = `
+            <button onclick="sendQuickMessage('How much is the Signature Facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              💵 Price & $30 OFF
+            </button>
+            <button onclick="sendQuickMessage('What is included in Signature Facial?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              ✨ What's included?
+            </button>
+            <button onclick="sendQuickMessage('Is it safe for sensitive skin?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              🌸 Sensitive skin?
+            </button>
+            <button onclick="sendQuickMessage('How do I book an appointment?')" class="flex-shrink-0 bg-white hover:bg-brand-rose hover:text-white px-3 py-1.5 rounded-full border border-brand-rose/25 text-brand-dark transition-colors">
+              📅 How to book?
+            </button>
+          `;
+        }
+
+        if (welcomeText && chatMessages && chatMessages.children.length <= 1) {
+          welcomeText.innerHTML = "Hello! I am your Revive Voice & Chat Concierge. You can <strong>type your questions</strong> or tap the <strong>microphone 🎙️</strong> to speak with me in English or Español. How can I help your skin today?";
+        }
+      }
+
+      // Stop any ongoing speech playback
+      if (currentAudioElement) {
+        currentAudioElement.pause();
+        currentAudioElement = null;
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+
+      // Reconfigure recognition language immediately
+      if (recognition) {
+        recognition.lang = lang === 'es' ? 'es-US' : 'en-US';
+      }
+    }
+
+    // Initialize Web Speech Recognition with Language-Accuracy
+    function initSpeechRecognition() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        console.warn('Speech recognition not supported in this browser.');
+        return null;
+      }
+      const rec = new SpeechRecognition();
+      rec.continuous = false;
+      rec.interimResults = true; // Show live transcription as you speak!
+      rec.maxAlternatives = 1;
+      rec.lang = currentChatLang === 'es' ? 'es-US' : 'en-US';
+
+      rec.onstart = () => {
+        isListening = true;
+        const ind = document.getElementById('listeningIndicator');
+        const mic = document.getElementById('micBtn');
+        const listeningText = document.getElementById('listeningText');
+        if (ind) {
+          ind.classList.remove('hidden');
+          if (listeningText) {
+            listeningText.textContent = currentChatLang === 'es' 
+              ? 'Escuchando en español... habla ahora' 
+              : 'Listening in English... speak now';
+          }
+        }
+        if (mic) {
+          mic.classList.add('bg-brand-rose', 'text-white', 'scale-110', 'mic-recording');
+          mic.classList.remove('bg-brand-sand', 'text-brand-dark');
+        }
+      };
+
+      rec.onresult = (event) => {
+        let interimTranscript = '';
+        let finalTranscript = '';
+
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            finalTranscript += event.results[i][0].transcript;
+          } else {
+            interimTranscript += event.results[i][0].transcript;
+          }
+        }
+
+        const input = document.getElementById('chatInput');
+        if (input) {
+          input.value = finalTranscript || interimTranscript;
+        }
+
+        if (finalTranscript.trim()) {
+          stopSpeechRecognition();
+          handleUserMessage(new Event('submit'));
+        }
+      };
+
+      rec.onerror = (event) => {
+        console.warn('Speech recognition error:', event.error);
+        stopSpeechRecognition();
+      };
+
+      rec.onend = () => {
+        stopSpeechRecognition();
+      };
+
+      return rec;
+    }
+
+    function toggleSpeechRecognition() {
+      // Ensure language matches current toggle
+      if (!recognition) {
+        recognition = initSpeechRecognition();
+      } else {
+        recognition.lang = currentChatLang === 'es' ? 'es-US' : 'en-US';
+      }
+
+      if (!recognition) {
+        alert('El reconocimiento de voz por micrófono no es soportado por tu navegador. ¡Puedes escribir tu consulta!');
+        return;
+      }
+
+      if (isListening) {
+        stopSpeechRecognition();
+      } else {
+        try {
+          recognition.start();
+        } catch (e) {
+          console.warn('Recognition start exception:', e);
+          stopSpeechRecognition();
+        }
+      }
+    }
+
+    function stopSpeechRecognition() {
+      isListening = false;
+      if (recognition) {
+        try { recognition.stop(); } catch(e) {}
+      }
+      const ind = document.getElementById('listeningIndicator');
+      const mic = document.getElementById('micBtn');
+      if (ind) ind.classList.add('hidden');
+      if (mic) {
+        mic.classList.remove('bg-brand-rose', 'text-white', 'scale-110', 'mic-recording');
+        mic.classList.add('bg-brand-sand', 'text-brand-dark');
+      }
+    }
+
+    // Toggle Voice Audio (Mute / Unmute)
+    function toggleVoiceAudio() {
+      VOICE_GUARDRAILS.isMuted = !VOICE_GUARDRAILS.isMuted;
+      const iconOn = document.getElementById('voiceIconOn');
+      const iconOff = document.getElementById('voiceIconOff');
+      const badge = document.getElementById('voiceBadge');
+
+      if (currentAudioElement) {
+        currentAudioElement.pause();
+        currentAudioElement = null;
+      }
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      setVoiceSpeaking(false);
+
+      if (VOICE_GUARDRAILS.isMuted) {
+        if (iconOn) iconOn.classList.add('hidden');
+        if (iconOff) iconOff.classList.remove('hidden');
+        if (badge) {
+          badge.textContent = 'Voice Muted';
+          badge.classList.remove('bg-brand-rose/20', 'text-brand-rose');
+          badge.classList.add('bg-gray-100', 'text-gray-500');
+        }
+      } else {
+        if (iconOn) iconOn.classList.remove('hidden');
+        if (iconOff) iconOff.classList.add('hidden');
+        if (badge) {
+          badge.textContent = 'Voice Active';
+          badge.classList.add('bg-brand-rose/20', 'text-brand-rose');
+          badge.classList.remove('bg-gray-100', 'text-gray-500');
+        }
+      }
+    }
+
+    // Strip HTML and Markdown for clean, natural speech
+    function cleanTextForSpeech(htmlOrMd, isSpanish) {
+      const tmp = document.createElement('DIV');
+      tmp.innerHTML = htmlOrMd;
+      let text = tmp.textContent || tmp.innerText || '';
+      text = text
+        .replace(/https?:\/\/\S+/g, '') // remove urls
+        .replace(/[\*\_#]/g, '');       // remove md symbols
+
+      if (isSpanish) {
+        text = text
+          .replace(/GLOW30/gi, 'Glow 30')
+          .replace(/\$195/g, '195 dólares')
+          .replace(/\$225/g, '225 dólares')
+          .replace(/\$30/g, '30 dólares')
+          .replace(/\$([0-9]+)/g, '$1 dólares')
+          .replace(/(\+?1\s*)?\(?203\)?[\s\-\.]*391[\s\-\.]*4983/g, '203 391 4983');
+      } else {
+        text = text
+          .replace(/GLOW30/gi, 'Glow thirty')
+          .replace(/\$195/g, 'one hundred ninety-five dollars')
+          .replace(/\$225/g, 'two hundred twenty-five dollars')
+          .replace(/\$30/g, 'thirty dollars')
+          .replace(/\$([0-9]+)/g, '$1 dollars')
+          .replace(/(\+?1\s*)?\(?203\)?[\s\-\.]*391[\s\-\.]*4983/g, 'two zero three, three nine one, four nine eight three');
+      }
+      return text.trim();
+    }
+
+    // Cache voices reliably
+    let cachedVoices = [];
+    function refreshVoices() {
+      if ('speechSynthesis' in window) {
+        cachedVoices = window.speechSynthesis.getVoices();
+      }
+    }
+    if ('speechSynthesis' in window) {
+      refreshVoices();
+      window.speechSynthesis.onvoiceschanged = refreshVoices;
+    }
+
+    // High-Fidelity Voice Synthesis (Google Cloud Neural2 / Journey or Native Voices)
+    async function speakBotResponse(rawText) {
+      if (VOICE_GUARDRAILS.isMuted) return;
+
+      // Session Limit Guardrail
+      let currentUsage = parseInt(sessionStorage.getItem(VOICE_GUARDRAILS.storageKey) || '0', 10);
+      if (currentUsage >= VOICE_GUARDRAILS.maxVoicePerSession) {
+        console.log('Voice guardrail limit reached for this session. Text remains active.');
+        return;
+      }
+      currentUsage++;
+      sessionStorage.setItem(VOICE_GUARDRAILS.storageKey, currentUsage.toString());
+
+      // Language Determination: Strictly follow user choice (ES or EN)
+      const isSpanish = (currentChatLang === 'es');
+      const spokenText = cleanTextForSpeech(rawText, isSpanish);
+      if (!spokenText) return;
+
+      // Check both TTS key and Gemini key (allows single key for everything)
+      const apiKey = localStorage.getItem(VOICE_GUARDRAILS.apiKeyStorageKey) || localStorage.getItem(GEMINI_CONFIG.apiKeyStorageKey);
+      const dailyUsage = getDailyUsage();
+      const dailyLimit = parseInt(localStorage.getItem(VOICE_GUARDRAILS.dailyLimitStorageKey) || VOICE_GUARDRAILS.defaultDailyCharLimit, 10);
+
+      // Stop previous audio
+      if (currentAudioElement) {
+        currentAudioElement.pause();
+        currentAudioElement = null;
+      }
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+
+      // OPTION A: Google Cloud Text-to-Speech (Neural2 / Journey - 100% Studio Quality)
+      if (apiKey && (dailyUsage.chars + spokenText.length <= dailyLimit)) {
+        try {
+          const voiceName = isSpanish ? 'es-US-Neural2-A' : 'en-US-Journey-F';
+          const langCode = isSpanish ? 'es-US' : 'en-US';
+
+          const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              input: { text: spokenText },
+              voice: { languageCode: langCode, name: voiceName },
+              audioConfig: {
+                audioEncoding: 'MP3',
+                speakingRate: 0.95,
+                pitch: 0.0
+              }
+            })
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            if (data.audioContent) {
+              recordDailyUsage(spokenText.length);
+              currentAudioElement = new Audio('data:audio/mp3;base64,' + data.audioContent);
+              setVoiceSpeaking(true);
+              currentAudioElement.onended = () => setVoiceSpeaking(false);
+              currentAudioElement.onerror = () => setVoiceSpeaking(false);
+              currentAudioElement.play();
+              return;
+            }
+          } else {
+            console.warn('Google Cloud TTS returned status:', response.status);
+          }
+        } catch (err) {
+          console.warn('Google Cloud TTS fetch error, falling back to native voice:', err);
+        }
+      }
+
+      // OPTION B: Native Authentic Voice (Zero Cost Fallback)
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(spokenText);
+        utterance.rate = 0.94;
+        utterance.pitch = 1.0;
+
+        let voices = cachedVoices.length ? cachedVoices : window.speechSynthesis.getVoices();
+        let chosenVoice = null;
+
+        if (isSpanish) {
+          // STRICT RULE: Only authentic native Spanish voices (Paulina, Mónica, Google español, Eddy, etc.)
+          chosenVoice = voices.find(v => /paulina/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => /m[oó]nica/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => /google.*español/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => /eddy.*(mexico|spain)|flo|lucia|jorge|juan|angelica/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => v.lang.toLowerCase().replace('_', '-').startsWith('es'));
+          
+          if (chosenVoice) {
+            utterance.voice = chosenVoice;
+            utterance.lang = chosenVoice.lang;
+          } else {
+            utterance.lang = 'es-MX';
+          }
+        } else {
+          // STRICT RULE: Only authentic native English voices (Samantha, Victoria, Serena, Google US English, etc.)
+          chosenVoice = voices.find(v => /google us english/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => /samantha|serena|victoria|karen|allison|ava|susan/i.test(v.name));
+          if (!chosenVoice) chosenVoice = voices.find(v => v.lang.toLowerCase().replace('_', '-').startsWith('en'));
+          if (chosenVoice) {
+            utterance.voice = chosenVoice;
+            utterance.lang = chosenVoice.lang;
+          } else {
+            utterance.lang = 'en-US';
+          }
+        }
+
+        setVoiceSpeaking(true);
+        utterance.onend = () => setVoiceSpeaking(false);
+        utterance.onerror = () => setVoiceSpeaking(false);
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+
+    // Voice test function
+    function testCurrentVoice() {
+      const sampleText = currentChatLang === 'es' 
+        ? "Hola, bienvenido a Revive Skin Care Studio. ¿En qué puedo ayudarte hoy?"
+        : "Hello, welcome to Revive Skin Care Studio. How can I help you today?";
+      speakBotResponse(sampleText);
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      loadSavedSettings();
+      setChatLanguage('en'); // Default to English as requested
+      refreshVoices();
+    });
+
+    async function handleUserMessage(e) {
+      e.preventDefault();
+      const input = document.getElementById('chatInput');
+      const text = input.value.trim();
+      if (!text) return;
+
+      // Auto-detect language dynamically from the user's message (Spanish <-> English)
+      const detectedLang = detectLanguage(text, currentChatLang);
+      if (detectedLang !== currentChatLang) {
+        setChatLanguage(detectedLang);
+      }
+
+      const chatMessages = document.getElementById('chatMessages');
+
+      // Add user message with entrance animation
+      const userBubble = document.createElement('div');
+      userBubble.className = 'flex justify-end msg-anim-right';
+      userBubble.innerHTML = `
+        <div class="bg-brand-rose-dark text-white p-3 rounded-2xl rounded-tr-sm max-w-[85%] leading-relaxed shadow-sm transition-transform hover:scale-[1.01]">
+          ${text}
+        </div>
+      `;
+      chatMessages.appendChild(userBubble);
+      input.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Typing animation simulation
+      const typingIndicator = document.createElement('div');
+      typingIndicator.className = 'flex items-start gap-2.5 msg-anim-left';
+      typingIndicator.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-brand-rose-light text-brand-rose-dark font-serif font-bold text-xs flex items-center justify-center flex-shrink-0">R</div>
+        <div class="bg-white p-3 rounded-2xl rounded-tl-sm border border-brand-rose/20 text-brand-muted text-xs shadow-sm flex items-center gap-1">
+          <span class="animate-bounce">●</span><span class="animate-bounce [animation-delay:0.2s]">●</span><span class="animate-bounce [animation-delay:0.4s]">●</span>
+        </div>
+      `;
+      chatMessages.appendChild(typingIndicator);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Try Google Gemini AI brain first with full knowledge base
+      let botReply = await callGeminiBrain(text);
+
+      // If Gemini is not configured, limit reached, or error, fallback to local knowledge engine
+      if (!botReply) {
+        botReply = getBotResponse(text);
+      }
+
+      if (typingIndicator.parentNode) {
+        chatMessages.removeChild(typingIndicator);
+      }
+
+      const botBubble = document.createElement('div');
+      botBubble.className = 'flex items-start gap-2.5 msg-anim-left';
+      botBubble.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-brand-rose-light text-brand-rose-dark font-serif font-bold text-xs flex items-center justify-center flex-shrink-0 shadow-sm">R</div>
+        <div class="bg-white p-3.5 rounded-2xl rounded-tl-sm border border-brand-rose/20 text-brand-dark shadow-sm max-w-[85%] leading-relaxed relative group">
+          ${botReply}
+          <!-- Animated Speaking Equalizer Wave Tag -->
+          <div class="speaking-bubble-wave hidden mt-2.5 pt-2 border-t border-brand-rose/15 items-center gap-1.5 text-[11px] text-brand-rose-dark font-medium">
+            <span class="flex items-center gap-0.5 h-3">
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+              <span class="wave-bar"></span>
+            </span>
+            <span class="italic">${currentChatLang === 'es' ? 'Reproduciendo audio...' : 'Speaking audio...'}</span>
+          </div>
+        </div>
+      `;
+      chatMessages.appendChild(botBubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Speak response with warm voice concierge
+      speakBotResponse(botReply);
+    }
+  </script>
+</body>
+</html>
