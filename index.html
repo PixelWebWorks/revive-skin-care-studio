@@ -292,9 +292,9 @@
             <a href="#voucher" class="w-full sm:w-auto text-center bg-brand-rose-dark hover:bg-brand-dark text-white font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-lg glow-rose hover:scale-[1.02]">
               Claim $30 First-Visit Voucher
             </a>
-            <button onclick="openChatBot('tell me more about the signature revive facial')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/80 hover:bg-white text-brand-dark font-medium px-6 py-4 rounded-full border border-brand-rose/30 transition-all duration-200">
+            <button onclick="openElevenLabsWidget()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/80 hover:bg-white text-brand-dark font-medium px-6 py-4 rounded-full border border-brand-rose/30 transition-all duration-200">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Ask Aesthetician Chatbot</span>
+              <span>🎙️ Talk to Voice Concierge</span>
             </button>
           </div>
 
@@ -906,9 +906,13 @@
   </footer>
 
   <!-- ============================================== -->
-  <!-- FLOATING AI CHATBOT CONCIERGE WIDGET           -->
+  <!-- ELEVENLABS CONVERSATIONAL AI VOICE AGENT       -->
   <!-- ============================================== -->
-  <div id="chatbotWidget" class="fixed bottom-6 right-6 z-50 flex items-end justify-end">
+  <elevenlabs-convai agent-id="agent_9101m3f8ygnbfmxbg6m6nj04jpnf"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <!-- Legacy Chatbot Widget (Hidden in favor of ElevenLabs Voice Agent) -->
+  <div id="chatbotWidget" style="display: none !important;" class="fixed bottom-6 right-6 z-50 flex items-end justify-end">
     
     <!-- Floating Concierge Invitation Pill (auto-hides when chat is opened) -->
     <div id="chatPromoPill" onclick="toggleChatWindow()" class="cursor-pointer mb-2 mr-3 hidden sm:flex items-center gap-2.5 bg-brand-dark/95 backdrop-blur-md text-white pl-3.5 pr-4 py-2.5 rounded-full shadow-2xl border border-brand-rose/40 text-xs whitespace-nowrap hover:bg-black transition-all duration-300 tooltip-pop group hover:scale-105">
@@ -1246,11 +1250,21 @@
       }
     }
 
-    function openChatBot(initialPrompt) {
-      if (!isChatOpen) toggleChatWindow();
-      if (initialPrompt) {
-        sendQuickMessage(initialPrompt);
+    function openElevenLabsWidget() {
+      const widget = document.querySelector('elevenlabs-convai');
+      if (widget) {
+        // Try clicking button inside shadowRoot if available
+        const innerBtn = widget.shadowRoot ? widget.shadowRoot.querySelector('button') : null;
+        if (innerBtn) {
+          innerBtn.click();
+        } else {
+          widget.click();
+        }
       }
+    }
+
+    function openChatBot(initialPrompt) {
+      openElevenLabsWidget();
     }
 
     function sendQuickMessage(text) {
