@@ -674,8 +674,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <div class="lg:col-span-5 order-2 lg:order-1 relative">
-          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand aspect-[4/5]">
-            <img src="assets/Jennifer-Oleg.jpg" alt="Jennifer, Founder & Licensed Aesthetician at Revive Skin Care Studio" class="w-full h-full object-cover object-top">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand aspect-[3/4]">
+            <img src="assets/Jennifer-Oleg.jpg" alt="Jennifer, Founder & Licensed Aesthetician at Revive Skin Care Studio" class="w-full h-full object-cover" style="object-position: center 85%;">
           </div>
           <div class="absolute -bottom-6 -right-4 sm:right-6 glass-card p-5 rounded-2xl shadow-xl max-w-xs border border-brand-rose/30">
             <p class="font-serif italic text-sm text-brand-dark">"Skin care is an art form. Every face is uniquely beautiful and deserves a tailored, meticulous approach."</p>
@@ -1254,8 +1254,10 @@
       if (!video) return;
 
       if (video.muted) {
+        video.currentTime = 0; // Restart video from beginning with audio
         video.muted = false;
         video.volume = 1.0;
+        video.play();
         mutedIcon?.classList.add('hidden');
         playingIcon?.classList.remove('hidden');
         if (label) label.textContent = 'Sound On';
