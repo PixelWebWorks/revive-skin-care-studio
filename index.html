@@ -311,11 +311,25 @@
             
             <!-- Main Hero Video Frame -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] sm:aspect-[4/5] bg-brand-dark">
-              <video autoplay loop muted playsinline poster="assets/hero-facial.jpeg" class="w-full h-full object-cover">
+              <video id="heroVideo" autoplay loop muted playsinline poster="assets/hero-facial.jpeg" class="w-full h-full object-cover">
                 <source src="assets/hero-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-transparent pointer-events-none"></div>
+
+              <!-- Audio Volume Toggle Button -->
+              <button id="heroAudioToggleBtn" onclick="toggleHeroVideoAudio()" class="absolute top-4 right-4 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-dark/85 hover:bg-black text-white text-xs font-medium backdrop-blur-md border border-white/30 shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer" aria-label="Toggle Hero Video Sound">
+                <!-- Muted Speaker Icon -->
+                <svg id="heroAudioMutedIcon" class="w-3.5 h-3.5 text-brand-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/>
+                </svg>
+                <!-- Unmuted Speaker Icon with sound waves -->
+                <svg id="heroAudioPlayingIcon" class="w-3.5 h-3.5 text-emerald-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                </svg>
+                <span id="heroAudioLabel" class="tracking-wide text-[11px] font-sans">Sound Off</span>
+              </button>
               
               <!-- Floating Overlay Tag -->
               <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-2xl border border-white/40 shadow-lg text-brand-dark">
@@ -498,33 +512,7 @@
         </div>
       </div>
 
-      <!-- Botanical Actives & Clinical Formulation Highlight with Travertine Image -->
-      <div class="mt-12 bg-brand-sand/60 rounded-3xl overflow-hidden border border-brand-rose/20 shadow-lg grid grid-cols-1 lg:grid-cols-2 items-center">
-        <div class="h-full min-h-[320px] relative order-2 lg:order-1">
-          <img src="assets/products-travertine.jpeg" alt="Botanical enzymes and luxury skincare formulations at Revive" class="w-full h-full object-cover">
-        </div>
-        <div class="p-8 sm:p-12 space-y-5 order-1 lg:order-2">
-          <span class="text-xs uppercase tracking-widest font-bold text-brand-rose-dark">Formulated For Your Skin</span>
-          <h3 class="text-2xl sm:text-3xl font-serif text-brand-dark">Clinical-Grade Botanicals, Zero Harsh Fillers</h3>
-          <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
-            Every serum, enzyme mask, and active treatment applied during the Signature Facial is curated for cellular biocompatibility. We blend botanical antioxidants, hyaluronic acid tri-molecules, and soothing peptides that calm irritation and lock in sustained luminosity.
-          </p>
-          <div class="grid grid-cols-2 gap-4 text-xs font-semibold text-brand-dark pt-1">
-            <div class="flex items-center gap-2">
-              <span class="text-brand-rose-dark">✓</span> Paraben & Fragrance Free
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-brand-rose-dark">✓</span> Barrier Restorative
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-brand-rose-dark">✓</span> Clean Clinical Actives
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-brand-rose-dark">✓</span> Cruelty-Free & Ethical
-            </div>
-          </div>
-        </div>
-      </div>
+
 
     </div>
   </section>
@@ -687,7 +675,7 @@
         
         <div class="lg:col-span-5 order-2 lg:order-1 relative">
           <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-brand-sand aspect-[4/5]">
-            <img src="assets/facial-massage.jpeg" alt="Jennifer Aesthetician performing facial treatment at Revive Skin Care Studio" class="w-full h-full object-cover">
+            <img src="assets/Jennifer-Oleg.jpg" alt="Jennifer, Founder & Licensed Aesthetician at Revive Skin Care Studio" class="w-full h-full object-cover object-top">
           </div>
           <div class="absolute -bottom-6 -right-4 sm:right-6 glass-card p-5 rounded-2xl shadow-xl max-w-xs border border-brand-rose/30">
             <p class="font-serif italic text-sm text-brand-dark">"Skin care is an art form. Every face is uniquely beautiful and deserves a tailored, meticulous approach."</p>
@@ -1254,6 +1242,28 @@
         setTimeout(() => {
           if (!isChatOpen) chatWindow.classList.add('hidden');
         }, 300);
+      }
+    }
+
+    // Hero Video Audio Control
+    function toggleHeroVideoAudio() {
+      const video = document.getElementById('heroVideo');
+      const mutedIcon = document.getElementById('heroAudioMutedIcon');
+      const playingIcon = document.getElementById('heroAudioPlayingIcon');
+      const label = document.getElementById('heroAudioLabel');
+      if (!video) return;
+
+      if (video.muted) {
+        video.muted = false;
+        video.volume = 1.0;
+        mutedIcon?.classList.add('hidden');
+        playingIcon?.classList.remove('hidden');
+        if (label) label.textContent = 'Sound On';
+      } else {
+        video.muted = true;
+        mutedIcon?.classList.remove('hidden');
+        playingIcon?.classList.add('hidden');
+        if (label) label.textContent = 'Sound Off';
       }
     }
 
