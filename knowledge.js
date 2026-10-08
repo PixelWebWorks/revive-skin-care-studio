@@ -24,21 +24,21 @@ const REVIVE_KNOWLEDGE = `
 
 # LAS 6 MODALIDADES INCLUIDAS EN EL SIGNATURE REVIVE FACIAL:
 1. Análisis de piel detallado y preparación: Evaluación profunda de la barrera cutánea, niveles de lípidos, hidratación y sensibilidad para elegir los ingredientes activos específicos.
-2. Dermaplaning y Microdermoabrasión: Exfoliación mecánica suave con bisturí quirúrgico estéril para eliminar células muertas y el vello fino ("peach fuzz"). No engruesa el vello ni duele. Permite que los sueros penetren un 80% más.
+2. Microdermoabrasión: Exfoliación física suave para eliminar células muertas, renovar la textura de la piel y suavizar el rostro. Permite que los sueros hidratantes penetren más profundamente.
 3. Peeling enzimático / químico suave: Resurfacing no agresivo adaptado al tipo de piel para disolver impurezas, emparejar el tono y renovar células sin pelado agresivo.
-4. Extracciones ultrasónicas indoloras: Limpieza profunda de poros, puntos negros y congestión con espátula ultrasónica y técnica clínica sin pellizcar ni dejar marcas.
+4. Extracciones ultrasónicas indoloras: Limpieza profunda de poros, puntos negros y congestión con espátula ultrasónica y técnica profesional sin pellizcar ni dejar marcas.
 5. Cúpula de Oxígeno Puro O2toDerm + Terapia LED (El famoso "Glass Facial"): Cúpula cerrada que suministra 90% de oxígeno hiperbárico con iones negativos y luz LED terapéutica. Calma rojeces, regenera células dañadas, neutraliza radicales libres y combate bacterias de acné.
 6. Masaje relajante de cuello, escote y brazos: Exfoliación mecánica de cuello y brazos combinada con masaje de drenaje linfático en escote y hombros para liberar tensiones y estimular la circulación.
 
 # OTROS SERVICIOS DEL ESTUDIO:
-- O2toDerm Oxygen Facial: 60 minutos por $190 (ideal si el cliente solo desea la terapia de oxígeno y LED sin dermaplaning).
+- O2toDerm Oxygen Facial: 60 minutos por $190 (ideal si el cliente busca una sesión enfocada en oxígeno hiperbárico y luz LED).
 - Tratamientos personalizados para acné activo y piel congestionada.
 - Faciales antiedad con activos botánicos y péptidos tensores.
 
 # PREGUNTAS FRECUENTES Y CASOS ESPECIALES DE PIEL:
-- ¿Duele el dermaplaning? No, es completamente indoloro. Se siente como un suave cosquilleo o raspado superficial. El vello fino vuelve a crecer con su grosor y color original a las 3-4 semanas.
+- ¿Cómo se siente la microdermoabrasión? Es completamente cómoda y no invasiva; se siente como un suave masaje exfoliante con ligera succión que renueva la textura de la piel sin dolor ni tiempo de inactividad.
 - ¿Es apto para piel sensible o con rosácea? Sí, 100%. Jennifer calibra los ácidos y enzimas según la tolerancia de la piel. El domo de oxígeno O2toDerm es excelente para desinflamar pieles reactivas.
-- ¿Es apto para piel con acné? Sí, se realiza limpieza y extracción clínica, y el oxígeno aniónico destruye las bacterias anaeróbicas del acné acelerando la cicatrización.
+- ¿Es apto para piel con acné? Sí, se realiza limpieza y extracción profesional cuidadosa, y el oxígeno aniónico purifica la piel acelerando su recuperación.
 - ¿Es apto durante el embarazo o lactancia? Sí, adaptamos los productos retirando exfoliantes químicos contraindicados y utilizando enzimas naturales y humectantes biocompatibles seguros para mamá y bebé.
 - ¿Qué pasa si me puse Botox o rellenos (fillers) recientemente? Se debe esperar un mínimo de 14 días (2 semanas) después de inyecciones faciales antes de hacerse el facial.
 - ¿Qué cuidados post-tratamiento se recomiendan? Usar protector solar diario SPF 30+, evitar saunas, piscinas o ejercicio extremo las primeras 24 horas y no usar exfoliantes caseros agresivos por 48 horas.
